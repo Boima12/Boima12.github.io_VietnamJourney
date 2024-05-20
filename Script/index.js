@@ -12,11 +12,6 @@ function CloseBar() {
     sidebar.classList.remove('open');
 }
 
-
-// back to intro when click the logo
-function navToIntro() {
-    window.location.href = '../../index.html';
-}
     
 
 // navigation bar background transparency

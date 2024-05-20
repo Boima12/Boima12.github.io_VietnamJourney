@@ -1,0 +1,254 @@
+/* IMPORTING */
+@font-face {
+    font-family: Raleway;
+    src: url("../../Fonts/Raleway-VariableFont_wght.ttf");
+}
+
+/* END IMPORTING */
+
+
+
+/* Loại bỏ margin - padding global */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* global font */
+* {
+    font-family: Raleway;
+}
+
+
+
+/* NAVIGATION BAR */
+header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+
+    position: fixed;
+
+    width: 100%;
+    height: 3rem;
+    border-bottom: 1.5px solid rgb(97, 94, 94);
+
+    background: linear-gradient(to right, rgb(29, 96, 42), rgb(39, 154, 83));
+
+}
+
+
+header div.logo {
+    justify-self: flex-start;
+}
+
+
+header div.logo img {
+    width: auto;
+    height: 2.9rem;
+    /* margin-left: 3rem; */
+}
+
+header div.logo img.logo1 {
+    display: block;
+}
+
+header div.logo img.logo2 {
+    display: none;
+}
+
+
+header div.links nav {
+    display: flex;
+    justify-content: space-around;
+    
+    width: 100%;
+    margin-left: 4rem;
+}
+
+
+header div.links nav a {
+    margin: 0; 
+    padding: 0 1rem; 
+
+    cursor: pointer; 
+
+    text-decoration: none;
+    color: white; 
+    font-size: small;
+    font-weight: 600;
+}
+
+
+header div.links nav a:hover {
+    color: #b8e994;
+}
+
+
+header div.bar {
+    display: none;
+    margin-right: 1rem;
+
+    color: aliceblue;
+    text-align: right;
+}
+
+
+header #overlay {
+    display: none;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    
+    z-index: 9999;
+}
+
+
+header #sidebar {
+    display: flex;
+    justify-content: flex-end; 
+    float: right;
+
+    position: fixed;
+
+    top: 0;
+    right: -20%;
+    width: 20%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+
+    background: linear-gradient(to top, rgb(37, 79, 46), rgb(53, 189, 105));
+
+    transition: right 0.3s ease-in-out;
+    z-index: 10000;
+
+}
+
+
+header #sidebar.open {
+    right: 0;
+}
+
+
+header #sidebar div.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1.5rem; 
+    width: 100%;
+}
+
+
+header #sidebar div.sidebar-content a {
+    text-align: right; 
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    color: aliceblue;
+    margin-top: 1.5rem;
+
+    margin-right: 0; 
+}
+
+
+header #sidebar div.sidebar-content a:hover {
+    color: #b8e994;
+}
+
+
+header #sidebar div.sidebar-content i {
+    font-size: smaller;
+}
+
+/* END NAVIGATION BAR */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1380px) {
+    header div.links nav a {
+        display: none;
+    }
+
+    header div.bar  {
+        display: block;
+    }
+
+    header #sidebar {
+        right: -30%;
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 630px) {
+    header {
+        height: 3.5rem;
+    }
+
+    header div.logo img.logo1 {
+        display: none;
+    }
+
+    header div.logo img.logo2 {
+        display: block;
+    }
+
+    header div.logo img {
+        width: auto;
+        height: 3.5rem;
+        margin-left: 14rem;
+    }
+
+    header #sidebar {
+        right: -50%;
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 560px) {
+    header div.logo img {
+        margin-left: 8rem;
+    }
+
+    header #sidebar {
+        right: -60%;
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 320px) {
+    header div.logo img {
+        margin-left: 5rem;
+    }
+}
+
+/* END RESPONSIVE DESIGN */

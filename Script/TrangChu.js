@@ -1,28 +1,34 @@
-let check = "none";
+// header menu bar
+const overlay = document.getElementById('overlay');
+const sidebar = document.getElementById('sidebar');
 
-function showdropmenu() {
-    if (check == "none") {
-        check = "block";
-    } else {
-        check = "none";
-    }
+function MenuBar() {
+    overlay.style.display = 'block';
+    sidebar.classList.add('open');
+}
 
-    document.getElementById("dropmenu1").style.display = check;
-    
+function CloseBar() {
+    overlay.style.display = 'none';
+    sidebar.classList.remove('open');
 }
 
 
+// back to intro when click the logo
+function navToIntro() {
+    window.location.href = '../../index.html';
+}
+    
 
 // navigation bar background transparency
-const navheader = document.getElementById('header1');
-function toggle_navheader() {
-    if (window.screenY == 0) {
-        navheader.style.backgroundColor = "rgba(82, 82, 82, 0)";
-    } else if (window.screenY < 140) {
-        navheader.style.backgroundColor = "rgba(82, 82, 82, " + parseInt(window.scrollY)*2 / 200 + ")";
-    } else {
-        navheader.style.backgroundColor = "rgba(82, 82, 82, 0.7)";
-    }
-}
+// const header = document.getElementById('header1');
+// function toggle_header() {
+//     if (window.screenY == 0) {
+//         header.style.background = 'linear-gradient(to right, rgba(29, 96, 42, 0), rgba(39, 154, 83, 0))';
+//     } else if (window.screenY < 210) {
+//         header.style.background = 'linear-gradient(to right, rgba(29, 96, 42, ' + parseInt(window.scrollY)*2 / 300 + '), rgba(39, 154, 83, ' + parseInt(window.scrollY)*2 / 300 + '))';
+//     } else {
+//         header.style.background = 'linear-gradient(to right, rgba(29, 96, 42, 0.7), rgba(39, 154, 83, 0.7))';
+//     }
+// }
 
-window.addEventListener('scroll', toggle_navheader);
+// window.addEventListener('scroll', toggle_header);
