@@ -66,36 +66,57 @@
         </div>
 
     </header>
-    <div style="height: 3rem;"></div>   <!-- Cách một khoảng cho navigation bar -->
+    <div style="height: 3rem;"></div>   
 
 
-
-
-
-
-
-
-    
-
-
-
-
-
-    
-<!-- LÀM Ở ĐÂY -->
-    <div style="height: 3000px"><p>text sample - Tài Khoản</p></div>
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>ĐĂNG KÝ</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>hoặc sử dụng email của bạn để đăng ký</span>
+                <input type="text" placeholder="Email">
+                <input type="email" placeholder="Mật Khẩu">
+                <input type="password" placeholder="Xác thực mật khẩu">
+                <button>ĐĂNG KÝ</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>ĐĂNG NHẬP</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>hoặc sử dụng mật khẩu gmail của bạn</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Mật khẩu">
+                <a href="#">Quên mật khẩu?</a>
+                <button>ĐĂNG NHẬP</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>CHÀO MỪNG BẠN QUAY TRỞ LẠI!</h1>
+                    <p>Nếu bạn đã có tài khoản vui lòng nhấn vào đăng nhập</p>
+                    <button class="hidden" id="login">ĐĂNG NHẬP</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>CHÀO BẠN</h1>
+                    <p>Nếu bạn chưa có tài khoản vui lòng nhấn vào đây để đăng ký</p>
+                    <button class="hidden" id="register">ĐĂNG KÝ</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -143,6 +164,22 @@
     
     <!-- JavaScript -->
     <script src="../../Script/TaiKhoan.js"></script>
+    <script>
+        const overlay = document.getElementById('overlay');
+        const sidebar = document.getElementById('sidebar');
+    function MenuBar() {
+        overlay.style.display = 'block';
+        sidebar.classList.add('open');
+        container.style.display= "none";
+        
+    }
+    function CloseBar() {
+        overlay.style.display = 'none';
+        sidebar.classList.remove('open');
+        container.style.display= "block";
+        
+    }
+    </script>
     <noscript>Your Browser doesn't support JavaScript</noscript>
     
 </BODY>
