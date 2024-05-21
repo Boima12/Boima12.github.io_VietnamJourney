@@ -25,17 +25,20 @@
 /* NAVIGATION BAR */
 header {
     display: flex;
-    align-items: center; 
-    justify-content: space-around;
-
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
-
     width: 100%;
-    height: 3rem;
+    height: 60px;
     border-bottom: 1.5px solid rgb(97, 94, 94);
-
     background: linear-gradient(to right, rgb(29, 96, 42), rgb(39, 154, 83));
+    z-index: 999;
+}
 
+
+
+header div.logo {
+    justify-self: flex-start;
 }
 
 
@@ -47,6 +50,8 @@ header div.logo img {
 
 header div.logo img.logo1 {
     display: block;
+    padding-left: 10px;
+    margin: 20px;
 }
 
 header div.logo img.logo2 {
@@ -57,21 +62,19 @@ header div.logo img.logo2 {
 header div.links nav {
     display: flex;
     justify-content: space-around;
-    
     width: 100%;
-    margin-left: 4rem;
 }
 
 
 header div.links nav a {
-    margin: 0; 
-    padding: 0 1rem; 
+    margin: 0;
+    padding: 0 1rem;
 
-    cursor: pointer; 
+    cursor: pointer;
 
     text-decoration: none;
-    color: white; 
-    font-size: small;
+    color: white;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -100,14 +103,14 @@ header #overlay {
     height: 100%;
 
     background-color: rgba(0, 0, 0, 0.8);
-    
+
     z-index: 9999;
 }
 
 
 header #sidebar {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     float: right;
 
     position: fixed;
@@ -137,20 +140,20 @@ header #sidebar div.sidebar-content {
     flex-direction: column;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 1.5rem; 
+    padding: 1.5rem;
     width: 100%;
 }
 
 
 header #sidebar div.sidebar-content a {
-    text-align: right; 
+    text-align: right;
     text-decoration: none;
     font-size: 1.2rem;
 
     color: aliceblue;
     margin-top: 1.5rem;
 
-    margin-right: 0; 
+    margin-right: 0;
 }
 
 
@@ -167,204 +170,113 @@ header #sidebar div.sidebar-content i {
 
 
 
+/* BEGIN BODY STYLE */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Code CSS ở đây */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* FOOTER */
-footer div.up {
-    display: flex;
-    justify-content: space-around;
-    gap: 1.2rem;
-    width: 100%;
-
+.body {
     background-color: white;
-
+    position: relative;
+    top: 10px;
+    padding: 40px 50px 50px 50px;
+    font-family: Raleway;
 }
 
-
-footer div.up h2 {
-    font-weight: bold;
-    color: #2B6200;
+.body nav hr {
+    position: absolute;
+    top: 70px;
+    left: 60px;
+    width: 100px;
+    margin: 0;
+    border: 1px solid black;
 }
 
-
-footer div.up #about {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    width: 50%;
-    padding-left: 3rem;
-    padding-right: 3rem;
-}
-
-
-footer div.up #quickLinks {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    width: 25%;
-    padding-left: 3rem;
-    padding-right: 3rem;
-}
-
-
-footer div.up #quickLinks a {
+.body nav a {
     text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px;
     color: black;
 }
+.body nav .event {
+    color: gray;
+}
 
+.body .post {
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 1220px;
+    height: 1300px;
+    background-color: rgba(239, 239, 239, 0.40);
+}
 
-footer div.up #contacts {
+.body .publish {
+    margin-top: 15px;
+    left: 1320px;
+    height: 180px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(239, 239, 239, 0.40);
+    width: 540px;
+    top: 70px;
+}
+
+.body .member {
+    left: 1320px;
+    height: 420px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(239, 239, 239, 0.40);
+    width: 540px;
+    top: 300px;
+}
+
+.body .online {
+    left: 1320px;
+    height: 340px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(239, 239, 239, 0.40);
+    width: 540px;
+    top: 760px;
+}
+
+.body .post .avatar {
+    margin: 40px;
+}
+
+.body .post .name {
+    font-size: 23px;
+    font-weight: bold;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    width: 25%;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    position: absolute;
+    top: 120px;
+    left: 180px;
 }
 
-
-footer div.mid {
-    display: flex;
-    justify-content: flex-end;
-    gap: 0.5rem;
-
-    width: 100%;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-    background-color: white;
+.body .post .avatar-name {
+    position: absolute;
+    top: 140px;
+    left: 115px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
 }
 
-
-footer div.mid a img {
-    width: 30px;
-    height: 30px;
+.body .post .title {
+    font-size: 30px;
+    position: absolute;
+    font-weight: bold;
+    top: 160px;
+    left: 180px;
 }
 
-
-footer div.bot {
-    display: flex;
-    justify-content: flex-start;
-
-    padding-left: 3rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    width: 100%;
-
-    background: linear-gradient(to right, rgb(29, 96, 42), rgb(39, 154, 83));
+.body .post .content {
+    text-align: justify;
+    font-size: 18px;
+    margin-left: 130px;
+    padding-right: 80px;
 }
 
-
-footer div.bot img {
-    width: auto;
-    height: 2.9rem;
-}
-
-
-footer div.bot img.logo1 {
-    display: block;
-}
-
-
-footer div.bot img.logo2 {
-    display: none;
-}
-
-
-/* END FOOTER */
-
-
-
-
-
-
-
-
-
-
+/* END BODY STYLE */
 
 
 
@@ -374,7 +286,7 @@ footer div.bot img.logo2 {
         display: none;
     }
 
-    header div.bar  {
+    header div.bar {
         display: block;
     }
 
