@@ -14,7 +14,7 @@
 
     <!--Bootstrap 5-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -23,11 +23,11 @@
 
 
 <BODY style="background-color: #FFF4E6;">
-    
+
     <!-- header là Navigation bar -->
     <header id="header1">
         <div class="logo">
-            <img class="logo1" src="../../Images/header1.png" onclick="navToIntro()">
+            <img class="logo1" src="../../Images/header1.png" onclick="navToIntro()" style="height: 40px;">
             <img class="logo2" src="../../Images/header2.png" onclick="navToIntro()">
         </div>
 
@@ -39,7 +39,7 @@
                 <a href="../Nhom/Nhom.html">NHÓM</a>
                 <a href="../QuyenGop/QuyenGop.html">QUYÊN GÓP</a>
                 <a href="../TaiKhoan/TaiKhoan.html">TÀI KHOẢN</a>
-            </nav>    
+            </nav>
         </div>
 
         <div class="bar" onclick="MenuBar()">
@@ -50,10 +50,10 @@
 
         <div id="sidebar">
             <div class="sidebar-content">
-        
+
                 <div style="color: aliceblue;text-align: right;margin-top:0;" onclick="CloseBar()"><i
                         class="fa-solid fa-bars"></i></div>
-                        
+
                 <!-- <p>VỀ CHÚNG TÔI <i class="fa-regular fa-address-card"></i></p> -->
                 <a href="../TrangChu/TrangChu.html">TRANG CHỦ <i class="fa-solid fa-house"></i></a>
                 <a href="../CongDong/CongDong.html">CỘNG ĐỒNG <i class="fa-solid fa-earth-americas"></i></a>
@@ -66,7 +66,7 @@
         </div>
 
     </header>
-    <div style="height: 3rem;"></div>   
+    <div style="height: 3rem;"></div> <!-- Cách một khoảng cho navigation bar -->
 
 
     <div class="container" id="container">
@@ -124,8 +124,12 @@
         <div class="up">
             <div id="about">
                 <h2>Chúng tôi</h2>
-                <p>chúng tôi là những người yêu thiên nhiên và ủng hộ môi trường. Tận dụng sức mạnh của cộng đồng và giáo dục trong việc thúc đẩy sự thay đổi tích cực đến môi trường, từ đó tạo ra những câu chuyện truyền cảm hứng và lời khuyên thiết thực để giúp mọi người nhận ra ai cũng có thể hành động vì môi trường.<br>
-                    Hãy tham gia cùng chúng tôi trên hành trình hướng tới một thế giới xanh hơn, lành mạnh hơn cho tất cả mọi người.
+                <p>chúng tôi là những người yêu thiên nhiên và ủng hộ môi trường. Tận dụng sức mạnh của cộng đồng và
+                    giáo dục trong việc thúc đẩy sự thay đổi tích cực đến môi trường, từ đó tạo ra những câu chuyện
+                    truyền cảm hứng và lời khuyên thiết thực để giúp mọi người nhận ra ai cũng có thể hành động vì môi
+                    trường.<br>
+                    Hãy tham gia cùng chúng tôi trên hành trình hướng tới một thế giới xanh hơn, lành mạnh hơn cho tất
+                    cả mọi người.
                 </p>
             </div>
 
@@ -148,7 +152,8 @@
 
 
         <div class="mid">
-            <a href="https://www.youtube.com/channel/UC1cpkfqLNp6I1HgNy2MUhUg"><img src="../../Images/youtube_icon.png"></a>
+            <a href="https://www.youtube.com/channel/UC1cpkfqLNp6I1HgNy2MUhUg"><img
+                    src="../../Images/youtube_icon.png"></a>
             <a href="https://discord.com/invite/45fkbZcj"><img src="../../Images/discord_icon.png"></a>
             <a href="https://x.com/dog_rates"><img src="../../Images/twitter_icon.png"></a>
             <a href="https://web.facebook.com/vku.udn.vn/?_rdc=1&_rdr"><img src="../../Images/facebook_icon.png"></a>
@@ -161,27 +166,27 @@
         </div>
     </footer>
 
-    
+
     <!-- JavaScript -->
     <script src="../../Script/TaiKhoan.js"></script>
     <script>
         const overlay = document.getElementById('overlay');
         const sidebar = document.getElementById('sidebar');
-    function MenuBar() {
-        overlay.style.display = 'block';
-        sidebar.classList.add('open');
-        container.style.display= "none";
-        
-    }
-    function CloseBar() {
-        overlay.style.display = 'none';
-        sidebar.classList.remove('open');
-        container.style.display= "block";
-        
-    }
+        function MenuBar() {
+            overlay.style.display = 'block';
+            sidebar.classList.add('open');
+            container.style.display = "none";
+
+        }
+        function CloseBar() {
+            overlay.style.display = 'none';
+            sidebar.classList.remove('open');
+            container.style.display = "block";
+
+        }
     </script>
     <noscript>Your Browser doesn't support JavaScript</noscript>
-    
+
 </BODY>
 
 </HTML>
