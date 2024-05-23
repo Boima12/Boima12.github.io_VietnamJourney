@@ -15,8 +15,22 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
-    
 
+        const overlay = document.getElementById('overlay');
+        const sidebar = document.getElementById('sidebar');
+        function MenuBar() {
+            overlay.style.display = 'block';
+            sidebar.classList.add('open');
+            container.style.display = "none";
+
+        }
+        function CloseBar() {
+            overlay.style.display = 'none';
+            sidebar.classList.remove('open');
+            container.style.display = "block";
+
+        }
+    
 // navigation bar background transparency
 // const header = document.getElementById('header1');
 // function toggle_header() {
