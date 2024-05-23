@@ -170,6 +170,18 @@
     <!-- JavaScript -->
     <script src="../../Script/TaiKhoan.js"></script>
     <noscript>Your Browser doesn't support JavaScript</noscript>
+    <script>
+        const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
+
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
+});
+
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
+});
+    </script>
 
 </BODY>
 
