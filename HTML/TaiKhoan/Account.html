@@ -1,1 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <title>Tài Khoản</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Account.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../Images/yo.ico">
+
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body style="background: linear-gradient(to bottom, rgb(200, 231, 206), rgb(75, 137, 98));">
+
+    <!-- header là Navigation bar -->
+    <header id="header1">
+        <div class="logo">
+            <img class="logo1" src="../../Images/header1.png" onclick="navToIntro()">
+            <img class="logo2" src="../../Image/header2.png" onclick="navToIntro()">
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../TrangChu/TrangChu.html">TRANG CHỦ</a>
+                <a href="../CongDong/CongDong.html">CỘNG ĐỒNG</a>
+                <a href="../ChienDich/ChienDich.html">CHIẾN DỊCH</a>
+                <a href="../Nhom/Nhom.html">NHÓM</a>
+                <a href="../QuyenGop/QuyenGop.html">QUYÊN GÓP</a>
+                <a href="../TaiKhoan/TaiKhoan.html">TÀI KHOẢN</a>
+            </nav>
+        </div>
+
+        <div class="bar" onclick="MenuBar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div id="overlay"></div>
+
+        <div id="sidebar">
+            <div class="sidebar-content">
+
+                <div style="color: aliceblue;text-align: right;margin-top:0;" onclick="CloseBar()"><i
+                        class="fa-solid fa-bars"></i></div>
+
+                <!-- <p>VỀ CHÚNG TÔI <i class="fa-regular fa-address-card"></i></p> -->
+                <a href="../TrangChu/TrangChu.html">TRANG CHỦ <i class="fa-solid fa-house"></i></a>
+                <a href="../CongDong/CongDong.html">CỘNG ĐỒNG <i class="fa-solid fa-earth-americas"></i></a>
+                <a href="../ChienDich/ChienDich.html">CHIẾN DỊCH <i class="fa-solid fa-fire"></i></a>
+                <a href="../Nhom/Nhom.html">NHÓM <i class="fa-solid fa-people-group"></i></a>
+                <a href="../QuyenGop/QuyenGop.html">QUYÊN GÓP <i class="fa-solid fa-hand-holding-dollar"></i></a>
+                <a href="../TaiKhoan/TaiKhoan.html">TÀI KHOẢN <i class="fa-solid fa-user"></i></a>
+            </div>
+
+        </div>
+
+    </header>
+    <div style="height: 3rem;"></div>
+
+    <div class="container" style="margin-top: 1rem;">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="container1">
+                    <div class="container1-avatar"></div>
+                    <div class="container1-info">
+                        <p style="font-size: large;">Lê Trung Việt</p>
+                        <p style="font-size: medium;">vietle_2005</p>
+                        <div class="container1-flower">
+                            <div class="circle"><img src="forest-3622519.jpg"></div>
+                            <div class="circle1"><img
+                                    src="Image/anh-dep-trong-cay-bao-ve-moi-truong-song_101322296.jpg"></div>
+                            <p style="margin-left: 0;">Có anh_tu,giabao và 25 người khác theo dõi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-8">
+                <div class="container2">
+                    <input type="text" id="simpleTextField" name="simpleTextField"
+                        placeholder="   Bạn đang suy nghĩ gì..."><i class="fa-regular fa-file-image"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="container3">
+                    <p style="font-size: 1.5rem;">Giới thiệu</p>
+                    <p><i class="fa-solid fa-building"></i> Đồng sáng lập VietNamJourney</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Sống tại Đà Nẵng</p>
+                    <p><i class="fa-regular fa-calendar"></i> Đã tham gia vào ngày 12/5/2024</p>
+                    <p> <i class="fa-solid fa-ellipsis"></i> Xem thêm thông tin về Việt</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-8">
+                <div class="container4">
+                    <p style="font-size: 1.5rem;margin-left: 0.5rem;">Bài viết của bạn</p>
+                    <div class="container4-content">
+                        <!-- Đây là tus-->
+                        <div class="container4-content-tus">
+
+                            <div class="container4-content-tus-head">
+                                <div class="container4-content-tus-avatar"></div>
+                                <div class="container4-content-tus-head-name">
+                                    <p>Lê Trung Việt<br><span style="font-size: smaller;color: #4d524e;">6 giờ
+                                            trước</span></p>
+                                </div>
+                                <p style="margin-top: 0rem; margin-bottom: 0; margin-left: auto; font-size: 1.5rem;">
+                                    ...
+                                </p>
+                            </div>
+                            <div class="container4-content-tus-information">
+                                <p>Chiến dịch này tôi đã tham gia cách đây 2 tháng về trước, chuyến đi đã cho tôi những
+                                    trải
+                                    nghiệm khó quên với những người bạn. Hy vọng mọi điều sẽ tốt đẹp đến với mọi người.
+                                </p>
+                            </div>
+                        </div>
+                        <!--Nơi chứa ảnh-->
+                        <div class="container4-content-tus-image">
+                            <img src="Image/anh-dep-trong-cay-bao-ve-moi-truong-song_101322296.jpg">
+                        </div>
+                        <div class="container4-content-tus-footer">
+                            <i class="fa-regular fa-heart"><span>15</span></i>
+                            <i class="fa-regular fa-comments"><span>10</span></i>
+                            <i class="fa-regular fa-paper-plane"><span>1</span></i>
+                        </div>
+                        <!-- Đây là tus-->
+                        <div class="container4-content-tus">
+                            <div class="container4-content-tus-head">
+                                <div class="container4-content-tus-avatar"></div>
+                                <div class="container4-content-tus-head-name">
+                                    <p>Lê Trung Việt<br><span style="font-size: smaller;color: #4d524e;">6 giờ
+                                            trước</span></p>
+                                </div>
+                                <p style="margin-top: 0rem; margin-bottom: 0; margin-left: auto; font-size: 1.5rem;">
+                                    ...
+                                </p>
+                            </div>
+                            <div class="container4-content-tus-information">
+                                <p>Xin chào mọi người tụi mình là four start đến từ trường đại học VKU</p>
+                            </div>
+                        </div>
+                        <!--Nơi chứa ảnh-->
+                        <div class="container4-content-tus-image">
+                            <img src="forest-3622519.jpg">
+                        </div>
+                        <div class="container4-content-tus-footer">
+                            <i class="fa-regular fa-heart"><span>20</span></i>
+                            <i class="fa-regular fa-comments"><span>10</span></i>
+                            <i class="fa-regular fa-paper-plane"><span>7</span></i>
+                        </div>
+                    </div>
+                    <!-- Đây là tus-->
+                    <div class="container4-content-footer">
+                        Không còn bài viết nào
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div class="up">
+            <div id="about">
+                <h2>Chúng tôi</h2>
+                <p>chúng tôi là những người yêu thiên nhiên và ủng hộ môi trường. Tận dụng sức mạnh của cộng đồng và
+                    giáo dục trong việc thúc đẩy sự thay đổi tích cực đến môi trường, từ đó tạo ra những câu chuyện
+                    truyền cảm hứng và lời khuyên thiết thực để giúp mọi người nhận ra ai cũng có thể hành động vì môi
+                    trường.<br>
+                    Hãy tham gia cùng chúng tôi trên hành trình hướng tới một thế giới xanh hơn, lành mạnh hơn cho tất
+                    cả mọi người.
+                </p>
+            </div>
+
+            <div id="quickLinks">
+                <h2>Links</h2>
+                <a href="../../HTML/TrangChu/TrangChu.html">Trang Chủ</a>
+                <a href="../../HTML/CongDong/CongDong.html">Cộng Đồng</a>
+                <a href="../../HTML/ChienDich/ChienDich.html">Chiến Dịch</a>
+                <a href="../../HTML/Nhom/Nhom.html">Nhóm</a>
+                <a href="../../HTML/QuyenGop/QuyenGop.html">Quyên Góp</a>
+                <a href="../../HTML/TaiKhoan/TaiKhoan.html">Tài Khoản</a>
+            </div>
+
+            <div id="contacts">
+                <h2>Liên Lạc</h2>
+                <p>baochp.23it@vku.udn.vn</p>
+                <p>+94897538627</p>
+            </div>
+        </div>
+
+        <div class="mid">
+            <a href="https://www.youtube.com/channel/UC1cpkfqLNp6I1HgNy2MUhUg"><img
+                    src="../../Images/youtube_icon.png"></a>
+            <a href="https://discord.com/invite/45fkbZcj"><img src="../../Images/discord_icon.png"></a>
+            <a href="https://x.com/dog_rates"><img src="../../Images/twitter_icon.png"></a>
+            <a href="https://web.facebook.com/vku.udn.vn/?_rdc=1&_rdr"><img src="../../Images/facebook_icon.png"></a>
+        </div>
+
+        <div class="bot">
+            <img class="logo1" src="../../Images/header1.png">
+            <img class="logo2" src="../../Images/header2.png">
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../Script/TaiKhoan.js"></script>
+    <noscript>Your Browser doesn't support JavaScript</noscript>
+
+</body>
+
+</html>
