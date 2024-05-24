@@ -25,7 +25,7 @@
 /* NAVIGATION BAR */
 header {
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: space-around;
 
     position: fixed;
@@ -58,20 +58,20 @@ header div.logo img.logo2 {
 header div.links nav {
     display: flex;
     justify-content: space-around;
-    
+
     width: 100%;
     margin-left: 4rem;
 }
 
 
 header div.links nav a {
-    margin: 0; 
-    padding: 0 1rem; 
+    margin: 0;
+    padding: 0 1rem;
 
-    cursor: pointer; 
+    cursor: pointer;
 
     text-decoration: none;
-    color: white; 
+    color: white;
     font-size: small;
     font-weight: 600;
 }
@@ -101,14 +101,14 @@ header #overlay {
     height: 100%;
 
     background-color: rgba(0, 0, 0, 0.8);
-    
+
     z-index: 9999;
 }
 
 
 header #sidebar {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     float: right;
 
     position: fixed;
@@ -138,20 +138,20 @@ header #sidebar div.sidebar-content {
     flex-direction: column;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 1.5rem; 
+    padding: 1.5rem;
     width: 100%;
 }
 
 
 header #sidebar div.sidebar-content a {
-    text-align: right; 
+    text-align: right;
     text-decoration: none;
     font-size: 1.2rem;
 
     color: aliceblue;
     margin-top: 1.5rem;
 
-    margin-right: 0; 
+    margin-right: 0;
 }
 
 
@@ -166,13 +166,14 @@ header #sidebar div.sidebar-content i {
 
 /* END NAVIGATION BAR */
 
-.container1{
+.container1 {
     width: 100%;
     height: 100;
     padding: 0;
     margin: 0;
     display: flex;
 }
+
 .container1-avatar {
     width: 5rem;
     height: 5rem;
@@ -180,10 +181,14 @@ header #sidebar div.sidebar-content i {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}.container1-info {
-    color: rgb(7, 55, 97);
+}
+
+.container1-info {
+    color: rgb(8, 8, 8);
     text-align: left;
-}.container1-info p{
+}
+
+.container1-info p {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0.5rem;
@@ -191,41 +196,81 @@ header #sidebar div.sidebar-content i {
     padding-top: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-        .container1-flower {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: auto;
-            margin: 0;
-            margin-left: 0;
-        }.container1-flower p{
-            margin-top: 0.3rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 0.7rem;
-        }
-    
-        .circle img{
-            margin-left: 0.5rem;
-            border-radius: 50%;
-            width: 15px;
-            height: 15px;
-            background-color: blue;
-        }.circle1 img{
-            border-radius: 50%;
-            width: 15px;
-            height: 15px;
-            background-color: rgb(22, 22, 24);
-            transform: translateX(-50%);
-        }
-    .container2 {
+
+.container1-flower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    margin-left: 0;
+}     .container1-button-account {
+        display: flex;
+        gap: 5px;
+}
+.container1-button-account button {
+    display: inline-block;
+    width: auto;
+    max-width: 200px;
+    margin-left: 0.2rem;
+    margin-top: 1rem;
+    border-radius: 7px;
+    padding: 0.3rem;
+    background-color: rgb(17, 134, 31);
+    color: #ffffff;
+    border: 1px solid rgb(46, 104, 32);
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.container1-button-account button:hover {
+    background-color: rgb(12, 122, 12); 
+    border-color: rgb(126, 187, 111); 
+    color: #ffffff; 
+}.container1-button-account i {
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    font-size: 0.7rem;
+}
+
+.container1-flower p {
+    margin-top: 0.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.7rem;
+}
+
+.circle img {
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+}
+
+.circle1 img {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(22, 22, 24);
+    transform: translateX(-50%);
+}
+
+.container2 {
     width: 100%;
     height: 100%;
     margin-left: 0rem;
-}.container2 input {
-    margin-top: 2rem;
+}
+
+.container2 input {
+    margin-top: 5rem;
     border-radius: 10px;
-    border: 2px solid #437c47;
-    width: 90%;
+    border: 2px solid #43b04a;
+    width: 80%;
     height: 2rem;
     outline: none;
     background-color: #ffffff;
@@ -240,56 +285,69 @@ header #sidebar div.sidebar-content i {
     border-color: #0E6D29;
     box-shadow: 0 0 10px rgba(14, 109, 41, 0.5);
 }
+
 .container2 i {
     color: #2c7417;
     margin-left: 0.2rem;
     margin-right: 0.2rem;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     vertical-align: middle;
     line-height: 1;
-}.container2 button {
+}
+
+.container2 button {
     border-radius: 5px;
     border: white;
     width: 5rem;
     color: #ffffff;
     height: 2rem;
     background-color: #316b05;
-}.container3 {
+}
+
+.container3 {
     width: 100%;
     height: auto;
     margin-left: 0rem;
-    background-color: rgb(55, 97, 54);
-    border-radius: 10px;
+    background-color: rgb(33, 127, 44);
+    border-radius: 15px;
     color: white;
     margin-top: 1rem;
     margin-bottom: 0.7rem;
     padding-bottom: 0.5rem;
-}.container3 i{
+}
+
+.container3 i {
     color: white;
     margin-right: 0.3rem;
 }
-.container3 p{
-margin-top: 0.2rem;
-margin-bottom: 0.4rem;
-margin-left: 1rem;
-font-size: medium;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.container3 p {
+    margin-top: 0.2rem;
+    margin-bottom: 0.4rem;
+    margin-left: 1rem;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .container4 {
     width: 100%;
     min-height: 10rem;
     margin-left: 0rem;
-    background-color: rgb(56, 108, 55);
+    background-color:  rgb(33, 127, 44);
     border-radius: 5px;
     color: aliceblue;
     margin-bottom: 1.5rem;
-}.container4-content {
+}
+
+.container4-content {
     width: 100%;
     background-color: rgb(255, 255, 255);
     min-height: 7rem;
     color: rgb(2, 2, 2);
     padding-top: 0.3rem;
-}.container4-content-footer {
+}
+
+.container4-content-footer {
     width: 100%;
     background-color: rgb(255, 255, 255);
     min-height: 3rem;
@@ -297,92 +355,130 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 0.5rem;
     text-align: center;
     font-size: larger;
-}.container4-content-tus {
+}
+
+.container4-content-tus {
     width: 100%;
     height: auto;
     padding-top: 0.2rem;
     margin-top: 1.2rem;
-    
+
 }
+
 .container4-content-tus-head {
     display: flex;
     width: 93%;
 
-}.container4-content-tus-head-name p{
-        margin-left: 5rem;
-        margin-top: 0;
-        margin-bottom: 0;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
-    }.container4-content-tus-head p {
+.container4-content-tus-head-name p {
+    margin-left: 5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.container4-content-tus-head p {
     margin-left: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
 
-}.container4-content-tus-information {
+}
+
+.container4-content-tus-information {
     color: black;
     margin-left: 1rem;
     margin-top: 5px;
     margin-bottom: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}.container4-content-tus-avatar {
+}
+
+.container4-content-tus-avatar {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin-left: 0.5rem;
-}.container4-content-tus-image {
+}
+
+.container4-content-tus-image {
     display: flex;
     width: auto;
     position: relative;
-}.container4-content-tus-image img{
+}
+
+.container4-content-tus-image img {
     width: 85%;
     height: auto;
     margin-left: 0.5rem;
     border-radius: 5px;
-}.container4-content-tus-footer  {
+}
+
+.container4-content-tus-footer {
     display: flex;
     margin-left: 0.5rem;
     margin-top: 0.2rem;
-}.container4-content-tus-footer i{
+}
+
+.container4-content-tus-footer i {
     color: #509819;
     font-size: x-large;
     margin-right: 1.5rem;
-}.container4-content-tus-footer span {
+}
+
+.container4-content-tus-footer span {
     color: #509819;
     font-size: 1rem;
-    margin-left:0.2rem;
+    margin-left: 0.2rem;
     margin-top: 0;
-    
-} @media (max-width:985px) {
+
+}
+
+@media (max-width:985px) {
     .container4-content-tus-image img {
-            width: 92%;
-            height: auto;
-            margin-left: 0.5rem;
-            border-radius: 5px;
-        }
-} @media (max-width:430px) {
-.container1-flower p{
-        font-size: 0.7rem;
+        width: 92%;
+        height: auto;
+        margin-left: 0.5rem;
+        border-radius: 5px;
     }
-    .circle img{
+}
+
+@media (max-width:430px) {
+    .container1-flower p {
+        font-size: 0.9rem;
+    }
+
+    .circle img {
         width: 10px;
         height: 10px;
     }
 
-    .circle1 img{
+    .circle1 img {
         width: 10px;
         height: 10px;
     }
-}@media (max-width:390px) {
+}
+
+@media (max-width:429px) {
+    .container1-flower p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:340px) {
     .container1-flower p {
         font-size: 0.6rem;
     }
-}@media (max-width:340px) {
+}@media (max-width :768px) {
+    .container2 input {
+        margin-top: 0.5rem;
+    }
+}@media (max-width:1205px) {
     .container1-flower p {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
 }
 
@@ -592,7 +688,7 @@ footer div.bot img.logo2 {
         display: none;
     }
 
-    header div.bar  {
+    header div.bar {
         display: block;
     }
 
