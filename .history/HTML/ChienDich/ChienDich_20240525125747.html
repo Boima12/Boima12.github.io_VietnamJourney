@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<HTML lang="en">
+
+<HEAD>
+    <TITLE>Chiến Dịch</TITLE>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../Images/yo.ico">
+
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Thư viện jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Thư viện Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="ChienDich.css">
+
+</HEAD>
+
+
+
+<BODY style="background-color: #FFF4E6;">
+    
+    <!-- header là Navigation bar -->
+    <header id="header1">
+        <div class="logo">
+            <img class="logo1" src="../../Images/header1.png" onclick="navToIntro()" style="height: 40px;">
+            <img class="logo2" src="../../Images/header2.png" onclick="navToIntro()">
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../TrangChu/TrangChu.html">TRANG CHỦ</a>
+                <a href="../CongDong/CongDong.html">CỘNG ĐỒNG</a>
+                <a href="../ChienDich/ChienDich.html">CHIẾN DỊCH</a>
+                <a href="../Nhom/Nhom.html">NHÓM</a>
+                <a href="../QuyenGop/QuyenGop.html">QUYÊN GÓP</a>
+                <a href="../TaiKhoan/TaiKhoan.html">TÀI KHOẢN</a>
+            </nav>
+        </div>
+
+        <div class="bar" onclick="MenuBar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div id="overlay"></div>
+
+        <div id="sidebar">
+            <div class="sidebar-content">
+
+                <div style="color: aliceblue;text-align: right;margin-top:0;" onclick="CloseBar()"><i
+                        class="fa-solid fa-bars"></i></div>
+
+                <!-- <p>VỀ CHÚNG TÔI <i class="fa-regular fa-address-card"></i></p> -->
+                <a href="../TrangChu/TrangChu.html">TRANG CHỦ <i class="fa-solid fa-house"></i></a>
+                <a href="../CongDong/CongDong.html">CỘNG ĐỒNG <i class="fa-solid fa-earth-americas"></i></a>
+                <a href="../ChienDich/ChienDich.html">CHIẾN DỊCH <i class="fa-solid fa-fire"></i></a>
+                <a href="../Nhom/Nhom.html">NHÓM <i class="fa-solid fa-people-group"></i></a>
+                <a href="../QuyenGop/QuyenGop.html">QUYÊN GÓP <i class="fa-solid fa-hand-holding-dollar"></i></a>
+                <a href="../TaiKhoan/TaiKhoan.html">TÀI KHOẢN <i class="fa-solid fa-user"></i></a>
+            </div>
+
+        </div>
+
+    </header>
+    <div style="height: 3rem;"></div> <!-- Cách một khoảng cho navigation bar -->
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+<!-- LÀM Ở ĐÂY -->
+    <!-- SECTION ONE  -->
+    <div class="section-one">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5  col-lg-5 col-md-12 col-sm-12 col-12">
+                    <div class="map">
+                        <img src="./images/bando.png" alt="bản đồ việt nam">
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                    <div class="right">
+                        <div class="search">
+                            <input type="search" class="inner-search" placeholder="Nhập tỉnh thành...">
+                            <select id="province" name="province" required>
+                                <option value="" selected disabled>Chọn tỉnh/thành</option>
+                            </select>
+                        </div>
+                        <div class="content">
+                            <img src="./images/anh1.jpg" alt="">
+                            <div class="inner-content">
+                                <div class="inner-title">
+                                    <div class="inner-text">PHÚ YÊN</div>
+                                    <div class="inner-line"></div>
+                                </div>
+                                <div class="part">
+                                    <div class="inner-content">
+                                        <div class="inner-title">Chiến dịch đã diễn ra</div>
+                                        <div class="inner-button">ĐI ĐẾN <i class="fa-solid fa-arrow-right"></i></div>
+                                    </div>
+                                    <div class="inner-count red">37</div>
+                                </div>
+                                <div class="part">
+                                    <div class="inner-content">
+                                        <div class="inner-title">Chiến dịch đang diễn ra</div>
+                                        <div class="inner-button">ĐI ĐẾN <i class="fa-solid fa-arrow-right"></i></div>
+                                    </div>
+                                    <div class="inner-count green">3</div>
+                                </div>
+                                <div class="part">
+                                    <div class="inner-content">
+                                        <div class="inner-title">Chiến dịch sắp đến</div>
+                                        <div class="inner-button">ĐI ĐẾN <i class="fa-solid fa-arrow-right"></i></div>
+                                    </div>
+                                    <div class="inner-count yellow">7</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION ONE  -->
+
+    <!-- SECTION TWO  -->
+    <div class="section-two campaign">
+        <div class="container">
+            <div class="title">
+                <div class="inner-title">CHIẾN DỊCH ĐÃ DIỄN RA</div>
+                <div class="inner-line"></div>
+                <div class="inner-province">PHÚ YÊN</div>
+            </div>
+            <div class="row autoplay">
+                <div class="item col-xl-4  col-lg-4 col-md-6 col-sm-6 col-12">
+                    <img src="./images/anh2.jpg" alt="">
+                    <div class="content">
+                        <p><b><i class="fa-solid fa-person-running"></i> Hoạt động: </b>Dọn rác bãi biển sơn trà</p>
+                        <p><b><i class="fa-solid fa-location-dot"></i> Địa điểm: </b>Bãi biển sơn trà, Đà Nẵng</p>
+                        <p><b><i class="fa-solid fa-calendar-days"></i> Thời gian: </b><span class="time">5h30 16/10/2023</span></p>
+                        <p><b><i class="fa-solid fa-people-roof"></i> Thành viên tham gia: </b><span class="count">21</span></p>
+                    </div>
+                    <button>Chi tiết</button>
+                    <div class="title">CHỦ NHẬT XANH</div>
+                </div>
+
+                <div class="item col-xl-4  col-lg-4 col-md-6 col-sm-6 col-12">
+                    <img src="./images/anh2.jpg" alt="">
+                    <div class="content">
+                        <p><b><i class="fa-solid fa-person-running"></i> Hoạt động: </b>Dọn rác bãi biển sơn trà</p>
+                        <p><b><i class="fa-solid fa-location-dot"></i> Địa điểm: </b>Bãi biển sơn trà, Đà Nẵng</p>
+                        <p><b><i class="fa-solid fa-calendar-days"></i> Thời gian: </b><span class="time">5h30 16/10/2023</span></p>
+                        <p><b><i class="fa-solid fa-people-roof"></i> Thành viên tham gia: </b><span class="count">21</span></p>
+                    </div>
+                    <button>Chi tiết</button>
+                    <div class="title">CHỦ NHẬT XANH</div>
+                </div>
+
+                <div class="item col-xl-4  col-lg-4 col-md-6 col-sm-6 col-12">
+                    <img src="./images/anh2.jpg" alt="">
+                    <div class="content">
+                        <p><b><i class="fa-solid fa-person-running"></i> Hoạt động: </b>Dọn rác bãi biển sơn trà</p>
+                        <p><b><i class="fa-solid fa-location-dot"></i> Địa điểm: </b>Bãi biển sơn trà, Đà Nẵng</p>
+                        <p><b><i class="fa-solid fa-calendar-days"></i> Thời gian: </b><span class="time">5h30 16/10/2023</span></p>
+                        <p><b><i class="fa-solid fa-people-roof"></i> Thành viên tham gia: </b><span class="count">21</span></p>
+                    </div>
+                    <button>Chi tiết</button>
+                    <div class="title">CHỦ NHẬT XANH</div>
+                </div>
+
+                <div class="item col-xl-4  col-lg-4 col-md-6 col-sm-6 col-12">
+                    <img src="./images/anh2.jpg" alt="">
+                    <div class="content">
+                        <p><b><i class="fa-solid fa-person-running"></i> Hoạt động: </b>Dọn rác bãi biển sơn trà</p>
+                        <p><b><i class="fa-solid fa-location-dot"></i> Địa điểm: </b>Bãi biển sơn trà, Đà Nẵng</p>
+                        <p><b><i class="fa-solid fa-calendar-days"></i> Thời gian: </b><span class="time">5h30 16/10/2023</span></p>
+                        <p><b><i class="fa-solid fa-people-roof"></i> Thành viên tham gia: </b><span class="count">21</span></p>
+                    </div>
+                    <button>Chi tiết</button>
+                    <div class="title">CHỦ NHẬT XANH</div>
+                </div>
+
+                
+            </div>
+            
+        </div>
+    </div>
+    <!-- SECTION TWO  -->
+
+    <!-- SECTION THREE  -->
+    <div class="section-three campaign">
+        <div class="container">
+            <div class="title">
+                <div class="inner-title">CHIẾN DỊCH ĐANG DIỄN RA</div>
+                <div class="inner-line"></div>
+                <div class="inner-province">PHÚ YÊN</div>
+            </div>
+            <div class="row autoplay">
+                <div class="item col-xl-4  col-lg-4 col-md-6 col-sm-6 col-12">
+                    <img src="./images/anh2.jpg" alt="">
+                    <div class="content">
+                        <p><b><i class="fa-solid fa-person-running"></i> Hoạt động: </b>Dọn rác bãi biển sơn trà</p>
+                        <p><b><i class="fa-solid fa-location-dot"></i> Địa điểm: </b>Bãi biển sơn trà, Đà Nẵng</p>
+                        <p><b><i class="fa-solid fa-calendar-days"></i> Thời gian: </b><span class="time">5h30 16/10/2023</span></p>
+                        <p><b><i class="fa-solid fa-people-roof"></i> Thành viên tham gia: </b><span class="count">21</span></p>
+                    </div>
+                    <div class="button">
+                        <button>Chi tiết</button>
+                        <button>Tham gia</button>
+                    </div>
+                    <div class="title">CHỦ NHẬT XANH</div>
+                </div>
+
+                <div class="item col-xl-4  col-lg-4 col-md-6 col-sm-6 col-12">
+                    <img src="./images/anh2.jpg" alt="">
+                    <div class="content">
+                        <p><b><i class="fa-solid fa-person-running"></i> Hoạt động: </b>Dọn rác bãi biển sơn trà</p>
+                        <p><b><i class="fa-solid fa-location-dot"></i> Địa điểm: </b>Bãi biển sơn trà, Đà Nẵng</p>
+                        <p><b><i class="fa-solid fa-calendar-days"></i> Thời gian: </b><span class="time">5h30 16/10/2023</span></p>
+                        <p><b><i class="fa-solid fa-people-roof"></i> Thành viên tham gia: </b><span class="count">21</span></p>
+                    </div>
+                    <div class="button">
+                        <button>Chi tiết</button>
+                        <button>Tham gia</button>
+                    </div>
+                    <div class="title">CHỦ NHẬT XANH</div>
+                </div>
+
+                <div class="item col-xl-4  col-lg-4 col-md-6 col-sm-6 col-12">
+                    <img src="./images/anh2.jpg" alt="">
+                    <div class="content">
+                        <p><b><i class="fa-solid fa-person-running"></i> Hoạt động: </b>Dọn rác bãi biển sơn trà</p>
+                        <p><b><i class="fa-solid fa-location-dot"></i> Địa điểm: </b>Bãi biển sơn trà, Đà Nẵng</p>
+                        <p><b><i class="fa-solid fa-calendar-days"></i> Thời gian: </b><span class="time">5h30 16/10/2023</span></p>
+                        <p><b><i class="fa-solid fa-people-roof"></i> Thành viên tham gia: </b><span class="count">21</span></p>
+                    </div>
+                    <div class="button">
+                        <button>Chi tiết</button>
+                        <button>Tham gia</button>
+                    </div>
+                    <div class="title">CHỦ NHẬT XANH</div>
+                </div>
+
+                <div class="item col-xl-4  col-lg-4 col-md-6 col-sm-6 col-12">
+                    <img src="./images/anh2.jpg" alt="">
+                    <div class="content">
+                        <p><b><i class="fa-solid fa-person-running"></i> Hoạt động: </b>Dọn rác bãi biển sơn trà</p>
+                        <p><b><i class="fa-solid fa-location-dot"></i> Địa điểm: </b>Bãi biển sơn trà, Đà Nẵng</p>
+                        <p><b><i class="fa-solid fa-calendar-days"></i> Thời gian: </b><span class="time">5h30 16/10/2023</span></p>
+                        <p><b><i class="fa-solid fa-people-roof"></i> Thành viên tham gia: </b><span class="count">21</span></p>
+                    </div>
+                    <div class="button">
+                        <button>Chi tiết</button>
+                        <button>Tham gia</button>
+                    </div>
+                    <div class="title">CHỦ NHẬT XANH</div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <!-- END SECTION THREE  -->
+
+    <!-- SECTION FOUR  -->
+        <div class="section-four campaign">
+            <div class="container">
+                <div class="title">
+                    <div class="inner-title">CHIẾN DỊCH SẮP ĐẾN</div>
+                    <div class="inner-line"></div>
+                    <div class="inner-province">PHÚ YÊN</div>
+                </div>
+                <div class="row autoplay">
+                    <div class="item col-xl-4  col-lg-4 col-md-6 col-sm-6 col-12">
+                        <img src="./images/anh2.jpg" alt="">
+                        <div class="content">
+                            <p><b><i class="fa-solid fa-person-running"></i> Hoạt động: </b>Dọn rác bãi biển sơn trà</p>
+                            <p><b><i class="fa-solid fa-location-dot"></i> Địa điểm: </b>Bãi biển sơn trà, Đà Nẵng</p>
+                            <p><b><i class="fa-solid fa-calendar-days"></i> Thời gian: </b><span class="time">5h30 16/10/2023</span></p>
+                            <p><b><i class="fa-solid fa-people-roof"></i> Thành viên tham gia: </b><span class="count">21</span></p>
+                        </div>
+                        <div class="button">
+                            <button>Chi tiết</button>
+                            <button>Tham gia</button>
+                        </div>
+                        <div class="title">CHỦ NHẬT XANH</div>
+                    </div>
+    
+                    <div class="item col-xl-4  col-lg-4 col-md-6 col-sm-6 col-12">
+                        <img src="./images/anh2.jpg" alt="">
+                        <div class="content">
+                            <p><b><i class="fa-solid fa-person-running"></i> Hoạt động: </b>Dọn rác bãi biển sơn trà</p>
+                            <p><b><i class="fa-solid fa-location-dot"></i> Địa điểm: </b>Bãi biển sơn trà, Đà Nẵng</p>
+                            <p><b><i class="fa-solid fa-calendar-days"></i> Thời gian: </b><span class="time">5h30 16/10/2023</span></p>
+                            <p><b><i class="fa-solid fa-people-roof"></i> Thành viên tham gia: </b><span class="count">21</span></p>
+                        </div>
+                        <div class="button">
+                            <button>Chi tiết</button>
+                            <button>Tham gia</button>
+                        </div>
+                        <div class="title">CHỦ NHẬT XANH</div>
+                    </div>
+    
+                    <div class="item col-xl-4  col-lg-4 col-md-6 col-sm-6 col-12">
+                        <img src="./images/anh2.jpg" alt="">
+                        <div class="content">
+                            <p><b><i class="fa-solid fa-person-running"></i> Hoạt động: </b>Dọn rác bãi biển sơn trà</p>
+                            <p><b><i class="fa-solid fa-location-dot"></i> Địa điểm: </b>Bãi biển sơn trà, Đà Nẵng</p>
+                            <p><b><i class="fa-solid fa-calendar-days"></i> Thời gian: </b><span class="time">5h30 16/10/2023</span></p>
+                            <p><b><i class="fa-solid fa-people-roof"></i> Thành viên tham gia: </b><span class="count">21</span></p>
+                        </div>
+                        <div class="button">
+                            <button>Chi tiết</button>
+                            <button>Tham gia</button>
+                        </div>
+                        <div class="title">CHỦ NHẬT XANH</div>
+                    </div>
+    
+                    <div class="item col-xl-4  col-lg-4 col-md-6 col-sm-6 col-12">
+                        <img src="./images/anh2.jpg" alt="">
+                        <div class="content">
+                            <p><b><i class="fa-solid fa-person-running"></i> Hoạt động: </b>Dọn rác bãi biển sơn trà</p>
+                            <p><b><i class="fa-solid fa-location-dot"></i> Địa điểm: </b>Bãi biển sơn trà, Đà Nẵng</p>
+                            <p><b><i class="fa-solid fa-calendar-days"></i> Thời gian: </b><span class="time">5h30 16/10/2023</span></p>
+                            <p><b><i class="fa-solid fa-people-roof"></i> Thành viên tham gia: </b><span class="count">21</span></p>
+                        </div>
+                        <div class="button">
+                            <button>Chi tiết</button>
+                            <button>Tham gia</button>
+                        </div>
+                        <div class="title">CHỦ NHẬT XANH</div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    <!-- END SECTION FOUR  -->
+
+    <!-- SECTION FIVE  -->
+        <div class="section-five ">
+            <div class="container">
+                <div class="row center">
+                    <div class="item col-xl-4  col-lg-4 col-md-6 col-sm-6 col-12">
+                        <img src="./images/anh2.jpg" alt="">
+                        <div class="content">
+                            <div class="inner-title">CHỦ NHẬT XANH</div>
+                            <div class="inner-desc">
+                                Ngày Chủ nhật Xanh không chỉ đơn thuần xoay quanh việc thu dọn rác thải, tạo cảnh quan đường sá sạch - đẹp hơn, mà điều quan trọng nhất là đánh thức được “màu xanh” trong việc nâng cao ý thức của người dân. Ngày Chủ nhật Xanh thật sự là một hoạt động ý nghĩa.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item col-xl-4  col-lg-4 col-md-6 col-sm-6 col-12">
+                        <img src="./images/anh2.jpg" alt="">
+                        <div class="content">
+                            <div class="inner-title">CHỦ NHẬT XANH</div>
+                            <div class="inner-desc">
+                                Ngày Chủ nhật Xanh không chỉ đơn thuần xoay quanh việc thu dọn rác thải, tạo cảnh quan đường sá sạch - đẹp hơn, mà điều quan trọng nhất là đánh thức được “màu xanh” trong việc nâng cao ý thức của người dân. Ngày Chủ nhật Xanh thật sự là một hoạt động ý nghĩa.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item col-xl-4  col-lg-4 col-md-6 col-sm-6 col-12">
+                        <img src="./images/anh2.jpg" alt="">
+                        <div class="content">
+                            <div class="inner-title">CHỦ NHẬT XANH</div>
+                            <div class="inner-desc">
+                                Ngày Chủ nhật Xanh không chỉ đơn thuần xoay quanh việc thu dọn rác thải, tạo cảnh quan đường sá sạch - đẹp hơn, mà điều quan trọng nhất là đánh thức được “màu xanh” trong việc nâng cao ý thức của người dân. Ngày Chủ nhật Xanh thật sự là một hoạt động ý nghĩa.
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="item col-xl-4  col-lg-4 col-md-6 col-sm-6 col-12">
+                        <img src="./images/anh2.jpg" alt="">
+                        <div class="content">
+                            <div class="inner-title">CHỦ NHẬT XANH</div>
+                            <div class="inner-desc">
+                                Ngày Chủ nhật Xanh không chỉ đơn thuần xoay quanh việc thu dọn rác thải, tạo cảnh quan đường sá sạch - đẹp hơn, mà điều quan trọng nhất là đánh thức được “màu xanh” trong việc nâng cao ý thức của người dân. Ngày Chủ nhật Xanh thật sự là một hoạt động ý nghĩa.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    <!-- END SECTION FIVE  -->
+
+    <!-- SECTION SIX  -->
+    <div class="section-six">
+        <div class="container">
+            <div class="title">
+                GƯƠNG MẶT TIÊU BIỂU
+            </div>
+            <div class="row">
+                <div class="item col-xl-3  col-lg-3 col-md-6 col-sm-6 col-12">
+                    <img src="./images/ảnh thẻ.jpg" alt="">
+                    <div class="title"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END SECTION SIX  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="up">
+            <div id="about">
+                <h2>Chúng tôi</h2>
+                <p>chúng tôi là những người yêu thiên nhiên và ủng hộ môi trường. Tận dụng sức mạnh của cộng đồng và giáo dục trong việc thúc đẩy sự thay đổi tích cực đến môi trường, từ đó tạo ra những câu chuyện truyền cảm hứng và lời khuyên thiết thực để giúp mọi người nhận ra ai cũng có thể hành động vì môi trường.<br>
+                    Hãy tham gia cùng chúng tôi trên hành trình hướng tới một thế giới xanh hơn, lành mạnh hơn cho tất cả mọi người.
+                </p>
+            </div>
+
+            <div id="quickLinks">
+                <h2>Links</h2>
+                <a href="../../HTML/TrangChu/TrangChu.html">Trang Chủ</a>
+                <a href="../../HTML/CongDong/CongDong.html">Cộng Đồng</a>
+                <a href="../../HTML/ChienDich/ChienDich.html">Chiến Dịch</a>
+                <a href="../../HTML/Nhom/Nhom.html">Nhóm</a>
+                <a href="../../HTML/QuyenGop/QuyenGop.html">Quyên Góp</a>
+                <a href="../../HTML/TaiKhoan/TaiKhoan.html">Tài Khoản</a>
+            </div>
+
+            <div id="contacts">
+                <h2>Liên Lạc</h2>
+                <p>baochp.23it@vku.udn.vn</p>
+                <p>+94897538627</p>
+            </div>
+        </div>
+
+
+        <div class="mid">
+            <a href="https://www.youtube.com/channel/UC1cpkfqLNp6I1HgNy2MUhUg"><img src="../../Images/youtube_icon.png"></a>
+            <a href="https://discord.com/invite/45fkbZcj"><img src="../../Images/discord_icon.png"></a>
+            <a href="https://x.com/dog_rates"><img src="../../Images/twitter_icon.png"></a>
+            <a href="https://web.facebook.com/vku.udn.vn/?_rdc=1&_rdr"><img src="../../Images/facebook_icon.png"></a>
+        </div>
+
+
+        <div class="bot">
+            <img class="logo1" src="../../Images/header1.png">
+            <img class="logo2" src="../../Images/header2.png">
+        </div>
+    </footer>
+
+    
+    <!-- JavaScript -->
+    <script src="../../Script/ChienDich.js"></script>
+    <noscript>Your Browser doesn't support JavaScript</noscript>
+    
+</BODY>
+
+</HTML>
