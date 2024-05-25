@@ -224,64 +224,225 @@ header #sidebar div.sidebar-content i {
 /* Code CSS ở đây */
 div.slider {
     width: auto;
-    height: 82.5rem; 
-
-    background-image: url("../../Images/TrangChu/slider_bg.png");
-    background-size: cover;
+    height: 56.25rem; 
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-image: url("../../Images/TrangChu/anh1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
-div.slider div.slider_info {
-    width: 85%;
-    height: 70%;
+div.slider div.slider_info1 {
+    width: 80%;
+    height: 22.875rem; 
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
+    /* display: none; */
+
     /* border: 1px solid red; */
 }
 
 
-div.slider div.slider_info p.slider_p1 {
-    width: 61.875rem;
+div.slider div.slider_info1 p.slider_p1 {
+    align-self: flex-start;
+    
+    width: 48.0625rem;
+
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 4.375rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%;
+}
+
+
+div.slider div.slider_info1 p.slider_p1 span {
+    color: #FFF; 
+}
+
+
+div.slider div.slider_info1 p.slider_p2 {
+    align-self: flex-end;
+
+    width: 45.875rem; 
+
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 1.7875rem */
+}
+
+
+div.slider div.slider_info2 {
+    width: 80%;
+    height: 35rem;
+
+    /* margin-left: -35rem; */
+    margin-bottom: 7rem;
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    /* display: none; */
+}
+
+
+div.slider div.slider_info2 p.slider_p1 {
+    width: 45.4375rem;
+
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 4.375rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%;
+}
+
+
+div.slider div.slider_info2 p.slider_p1 span {
+    color: #3C961D; 
+}
+
+
+div.slider div.slider_info2 p.slider_p2 {
+    width: 49.75rem; 
+
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 1.7875rem */
+}
+
+
+div.slider div.slider_info3 {
+    width: 80%;
+    height: 30rem;
+
+    margin-bottom: 10rem;
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    /* display: none; */
+}
+
+
+div.slider div.slider_info3 p.slider_p1 {
+    align-self: flex-end;
+    
+    width: 45.875rem; 
+
+    color: black;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 1.7875rem */
+}
+
+
+div.slider div.slider_info3 p.slider_p2 {
     align-self: flex-start;
 
-    color: #000000;
+    width: 44.0625rem; 
 
+    color: #FFF;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Raleway;
-    font-size: 6rem;
+    font-size: 4.375rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 130%; /* 7.8rem */
+    line-height: 130%;
 }
 
 
-div.slider div.slider_info p.slider_p1 #slider_p1_t1 {
-    color: white;
+div.slider div.slider_info3 p.slider_p2 span {
+    color: #52FB8C; 
 }
 
 
-div.slider div.slider_info p.slider_p2 {
-    width: 52.6875rem; 
-    align-self: flex-end;
-    padding-bottom: 23rem;
+div.slider2 {
+    width: auto;
+    height: 56.25rem; 
 
-    color: #ffffff;
+    display: none;
+    justify-content: center;
+    align-items: center;
 
+    background-image: url("../../Images/TrangChu/anh2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+div.slider2 div.slider_info2 {
+    width: 80%;
+    height: 30rem;
+
+    margin-bottom: 7rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+div.slider2 div.slider_info2 p.slider_p1 {
+    width: auto;
+
+    color: #000;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Raleway;
-    font-size: 1.5rem;
+    font-size: 4.375rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 130%; /* 1.95rem */
+    line-height: 130%;
 }
+
+
+div.slider2 div.slider_info2 p.slider_p1 span {
+    color: #3C961D; 
+}
+
+
+div.slider2 div.slider_info2 p.slider_p2 {
+    width: auto; 
+
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 1.7875rem */
+}
+
+
+
+
 
 
 div.authors {
@@ -290,7 +451,7 @@ div.authors {
     padding-left: 4rem;
     padding-right: 4rem;
     padding-bottom: 6rem;
-    margin-top: 15rem;
+    margin-top: 7.5rem;
 
     /* background-color: #03440A; */
 
@@ -335,7 +496,7 @@ div.authors div.people {
 
 
 div.authors div.people div.person {
-    width: 20rem;
+    width: 22%;
     height: 22rem;
 
     display: flex;
@@ -389,12 +550,13 @@ div.explore {
 
     width: 100%;
     height: auto; 
-    margin-top: 15rem;
 
     /* padding-left: 10%;
     padding-right: 10%; */
 
     /* background-color: #03440A; */
+
+    /* border: 1px solid red; */
 }
 
 
@@ -403,6 +565,7 @@ div.explore div.para {
     height: 13.5625rem; 
     
     padding-left: 4rem;
+    padding-right: 4rem;
     margin-bottom: 5rem;
 }
 
@@ -453,7 +616,7 @@ div.explore div.menuitems div.newbox {
     justify-content: space-between;
     align-items: center;
 
-    width: 34.375rem;
+    width: 30rem;
     height: 34.375rem;
     margin-bottom: 3rem;
     border-radius: 1rem;
@@ -463,7 +626,7 @@ div.explore div.menuitems div.newbox {
 
 
 div.explore div.menuitems div.newbox div.newbox_top {
-    width: 34.375rem;
+    width: 100%;
     height: 17.5rem;
     border-radius: 1rem 1rem 0rem 0rem; 
 }
@@ -477,7 +640,7 @@ div.explore div.menuitems div.newbox div.newbox_top img {
 
 
 div.explore div.menuitems div.newbox div.newbox_mid {
-    width: 31.125rem;
+    width: auto;
     height: 6.75rem; 
     margin-top: -5rem;
     padding-left: 1rem;
@@ -489,7 +652,7 @@ div.explore div.menuitems div.newbox div.newbox_mid {
 div.explore div.menuitems div.newbox div.newbox_mid p.p1 {
     color: rgba(123, 123, 123, 0.5);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Raleway;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 700;
@@ -534,7 +697,7 @@ div.explore div.menuitems div.newbox div.newbox_bot button {
 
 
 div.explore div.morebt {
-    margin-top: 2.5rem;
+    margin-top: -0.5rem;
     align-self: center;
     margin-bottom: 2.5rem;
 }
@@ -701,6 +864,16 @@ footer div.bot img.logo2 {
 
 
 /* RESPONSIVE DESIGN */
+@media (max-width: 1540px) {
+    div.explore div.menuitems div.newbox {
+        width: 27rem;
+    }
+}
+
+
+
+
+
 @media (max-width: 1380px) {
     header div.links nav a {
         display: none;
@@ -714,6 +887,110 @@ footer div.bot img.logo2 {
         right: -30%;
         width: 30%;
     }
+
+
+    /* authors */
+    div.authors {
+        height: auto;
+    }
+
+
+    div.authors div.authors_p p.authors_p2 {
+        width: auto;
+    }
+
+
+    div.authors div.people {
+        flex-direction: column;
+        gap: 3rem;
+
+        margin-top: 2rem;
+    }
+
+
+    div.authors div.people div.person {
+        width: 90%;
+        height: 8rem;
+
+        padding-left: 1rem;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    
+        background-color: white;
+        border-radius: 1rem;
+    }
+
+
+    div.authors div.people div.person img {
+        width: 7rem;
+        height: 7rem; 
+        border-radius: 7rem;
+    }
+
+
+    div.authors div.people div.person p.title {
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Raleway;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 130%; /* 3.25rem */
+
+        margin-left: 1rem;
+    }
+
+
+    div.authors div.people div.person p.descrip {
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Raleway;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; /* 1.95rem */
+
+        margin-left: 1rem;
+        padding-top: 2.2rem;
+    }
+    /* END authors */
+
+
+
+
+
+    /* explore */
+    div.explore div.para p.p2 {
+        width: auto;
+    
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Raleway;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 130%; /* 1.95rem */
+    }
+
+
+    div.explore div.menuitems div.newbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+        width: 40%;
+        height: 34.375rem;
+        margin-bottom: 3rem;
+        border-radius: 1rem;
+    
+        background-color: #ffffff;
+    }
+
+    /* END explore */
 }
 
 
@@ -733,6 +1010,86 @@ footer div.bot img.logo2 {
     footer div.up #contacts {
         width: 100%;
     }
+
+
+
+    /* slider */
+    div.slider {
+        display: none;
+    }
+
+
+    div.slider2 {
+        display: flex;
+    }
+    /* END slider */
+
+
+    /* authors */
+    div.authors div.people div.person img {
+        width: 6rem;
+        height: 6rem; 
+        border-radius: 6rem;
+    }
+
+
+    div.authors div.people div.person p.title {
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Raleway;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 130%; /* 3.25rem */
+
+        margin-left: 1rem;
+    }
+
+
+    div.authors div.people div.person p.descrip {
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Raleway;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; /* 1.95rem */
+
+        margin-left: 1rem;
+        padding-top: 2.2rem;
+    }
+    /* END authors */
+
+
+    /* explore */
+    div.explore div.para p.p2 {
+        width: auto;
+    
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Raleway;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 130%; /* 1.95rem */
+    }
+
+
+    div.explore div.menuitems div.newbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+        width: 30rem;
+        height: 34.375rem;
+        margin-bottom: 3rem;
+        border-radius: 1rem;
+    
+        background-color: #ffffff;
+    }
+
+    /* END explore */
 }
 
 
@@ -784,10 +1141,79 @@ footer div.bot img.logo2 {
         margin-left: 8rem;
     }
 
+
     header #sidebar {
         right: -60%;
         width: 60%;
     }
+
+
+    /* authors */
+    div.authors div.people {
+        gap: 4rem;
+    }
+
+
+    div.authors div.people div.person {
+        width: auto;
+        height: 10rem;
+
+        padding-left: 0rem;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: white;
+        border-radius: 1rem;
+    }
+
+
+    div.authors div.people div.person p.title {
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Raleway;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 130%; /* 3.25rem */
+
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+
+
+    div.authors div.people div.person p.descrip {
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Raleway;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; /* 1.95rem */
+
+        padding-top: 0px;
+    }
+    /* END authors */
+
+
+
+    /* explore */
+    div.explore div.para p.p2 {
+        height: auto;
+        margin-bottom: 1rem;
+    
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Raleway;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 130%; /* 1.95rem */
+    }
+    /* END explore */
+
 }
 
 
@@ -798,6 +1224,16 @@ footer div.bot img.logo2 {
 }
 
 /* END RESPONSIVE DESIGN */
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -836,5 +1272,35 @@ div.authors div.people div.person:nth-child(3) {
 div.authors div.people div.person:nth-child(4) {
     transition-delay: 600ms;
 }
+
+
+
+/* div.slider animation */
+.show1 {
+    opacity: 0;
+    filter: blur(5);
+    transform: translateY(-23%);
+}
+
+
+.show2 {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0%);
+    transition: all 1s;
+}
+
+
+.show3 {
+    opacity: 0;
+    filter: blur(5);
+    transform: translateY(-23%);
+}
+
+
+
+
+
+
 
 /* END animating stuff */

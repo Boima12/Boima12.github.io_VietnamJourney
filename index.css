@@ -209,7 +209,13 @@ header #sidebar div.sidebar-content i {
 
 
 /* Code CSS ở đây */
+div.mainscreen a {
+    color: green;
+    text-decoration: none;
 
+    margin-right: 3rem;
+    text-align: end;
+}
 
 
 
@@ -248,7 +254,7 @@ header #sidebar div.sidebar-content i {
 
 
 /* FOOTER */
-footer div.up {
+/*footer div.up {
     display: flex;
     justify-content: space-around;
     gap: 1.2rem;
@@ -348,7 +354,7 @@ footer div.bot img.logo1 {
 
 footer div.bot img.logo2 {
     display: none;
-}
+}*/
 
 
 /* END FOOTER */
