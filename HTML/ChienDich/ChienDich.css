@@ -28,6 +28,10 @@ body {
     padding-right: 50px;
 }
 
+a {
+ text-decoration: none;   
+}
+
 /*BASE*/
 
 /* Loại bỏ margin - padding global */
@@ -188,7 +192,11 @@ header #sidebar div.sidebar-content i {
 .section-one {
     background-image: linear-gradient(to bottom, #05390C, #E5FFEB);
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
+}
+
+.section-one .container {
+    margin-bottom: 50px;
 }
 
 .map {
@@ -196,19 +204,15 @@ header #sidebar div.sidebar-content i {
     position: relative;
     border-radius: 20px;
     max-width: 100%;
-    overflow: hidden;
-    height: 650px;
+    /* overflow: hidden; */
+    height: 600px;
     object-fit: cover;
     background-color: #b9cfbe ;
-}
-
-.map img {
-    width: 100%;
-    height: 100%;
+    padding: 20px;
 }
 
 .right {
-    height: 650px;
+    height: 600px;
 }
 
 .right .search {
@@ -436,7 +440,7 @@ header #sidebar div.sidebar-content i {
 .section-two {
     background-color: var(--color-bg);
     padding-top: 30px;
-    padding-bottom: 80px
+    padding-bottom: 70px
 }
 
 /* END SECTION-TWO */
@@ -446,7 +450,7 @@ header #sidebar div.sidebar-content i {
 .section-three {
     background-color: var(--color-bg);
     padding-top: 30px;
-    padding-bottom: 80px
+    padding-bottom: 70px
 }
 
 .section-three .item .button {
@@ -462,7 +466,7 @@ header #sidebar div.sidebar-content i {
 .section-four {
     background-color: var(--color-bg);
     padding-top: 30px;
-    padding-bottom: 80px
+    padding-bottom: 100px
 }
 
 .section-four .item .button {
