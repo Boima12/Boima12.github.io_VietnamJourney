@@ -6,10 +6,6 @@
 
 /* END IMPORTING */
 
-
-
-
-
 /*BASE*/
 * {
     box-sizing: border-box;
@@ -441,6 +437,17 @@ color: #000000;
     }
 }
 @media screen and (max-width: 991.8px) {
+    .map {
+        width: 90%;
+        position: relative;
+        border-radius: 20px;
+        max-width: 100%;
+        overflow: hidden;
+        height: 600px;
+        object-fit: cover;
+        background-color: #b9cfbe ;
+        padding: 20px;
+    }
 
 }
 @media screen and (max-width: 767.8px){

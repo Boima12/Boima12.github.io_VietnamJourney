@@ -6,10 +6,6 @@
 
 /* END IMPORTING */
 
-
-
-
-
 /*BASE*/
 * {
     box-sizing: border-box;
@@ -557,46 +553,27 @@ color: #000000;
 
 @media screen and (max-width: 1199.8px) {
     .campaign .title .inner-title {
-        font-size: 30px;
+        font-size: 36px;
+        font-weight: 800;
     }
+    
     .campaign .title .inner-line {
-        height: 5px;
-        width: 80px;
-    }
-    .campaign .title .inner-province {
-        font-size: 30px;
-    }
-    .campaign .item {
-        height: 450px;
-        border-radius: 0px 40px 0px 40px;
         position: relative;
-    }   
-    .campaign .item img{
-        border-top-right-radius: 40px;
+        height: 7px;
+        width: 100px;
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(52, 252, 2));
+        line-height: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+        /* background-color: #000000; */
     }
-    .campaign .item .content {
-        padding: 15px;
-    }
-    .campaign .item .content p {
-        font-size: 16px;
-        font-weight: 500;
-    }
-    .campaign .item .content p i {
-        width: 20px;
-    }    
-    .campaign .item .content p .count{
-        font-weight: 700;
+    
+    .campaign .title .inner-province {
+        font-size: 36px;
+        font-weight: 800;
         color: #00FF0A;
-        font-size: 20px;
     }
-    .campaign .item button {
-        font-size: 16px;
-    }
-    .campaign .item .title {
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-        font-size: 18px;
-    }
+    
 
 }
 @media screen and (max-width: 991.8px) {
@@ -743,22 +720,7 @@ color: #000000;
 
 
 @media screen and (max-width: 1199.8px) {
-    .section-five {
-        padding-top: 50px;
-    }
-    .section-five .item {
-        height: 500px;
-        padding: 25px;
-    }  
-    .section-five .item .content {
-        top: -60px;
-    }
-    .section-five .item .content .inner-title {
-        font-size: 18px;
-    }
-    .section-five .item .content .inner-desc {
-        font-size: 12px;
-    }
+    
 }
 @media screen and (max-width: 991.8px) {
 
@@ -824,23 +786,7 @@ color: #000000;
 }
 
 @media screen and (max-width: 1199.8px) {
-    .section-six {
-        padding-top: 20px;
-        padding-bottom: 40px;
-    }
-    .section-six .title {
-        font-size: 30px;
-        margin-bottom: 15px;
-    }
-    .section-six .inner {
-        padding: 15px;
-    }
-    .section-six .item .title {
-        font-size: 22px;
-    }
-    .section-six .item .desc {
-        font-size: 16px;
-    }
+    
 }
 @media screen and (max-width: 991.8px) {
 

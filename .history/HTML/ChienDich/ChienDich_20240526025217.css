@@ -6,10 +6,6 @@
 
 /* END IMPORTING */
 
-
-
-
-
 /*BASE*/
 * {
     box-sizing: border-box;
@@ -746,18 +742,44 @@ color: #000000;
     .section-five {
         padding-top: 50px;
     }
+    
     .section-five .item {
         height: 500px;
-        padding: 25px;
-    }  
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 30px;
+        padding-bottom: 0px;
+    }
+    
+    .section-five .item img {
+        height: 65%;
+        width: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+    
     .section-five .item .content {
-        top: -60px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.31);
+        width: 80%;
+        position: relative;
+        top: -80px;
+        background-color: white;
+        z-index: 2;
+        padding: 15px;
+        padding-top: 10px;
     }
     .section-five .item .content .inner-title {
-        font-size: 18px;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
     }
     .section-five .item .content .inner-desc {
-        font-size: 12px;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--color-desc);
+        text-align: justify;
     }
 }
 @media screen and (max-width: 991.8px) {
@@ -824,23 +846,7 @@ color: #000000;
 }
 
 @media screen and (max-width: 1199.8px) {
-    .section-six {
-        padding-top: 20px;
-        padding-bottom: 40px;
-    }
-    .section-six .title {
-        font-size: 30px;
-        margin-bottom: 15px;
-    }
-    .section-six .inner {
-        padding: 15px;
-    }
-    .section-six .item .title {
-        font-size: 22px;
-    }
-    .section-six .item .desc {
-        font-size: 16px;
-    }
+    
 }
 @media screen and (max-width: 991.8px) {
 

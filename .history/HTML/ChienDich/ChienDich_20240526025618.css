@@ -6,10 +6,6 @@
 
 /* END IMPORTING */
 
-
-
-
-
 /*BASE*/
 * {
     box-sizing: border-box;
@@ -836,10 +832,19 @@ color: #000000;
         padding: 15px;
     }
     .section-six .item .title {
-        font-size: 22px;
+        color: #000000;
+        font-size: 26px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 0;
     }
+    
     .section-six .item .desc {
-        font-size: 16px;
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--color-desc);
+        text-align: center;
+        margin-bottom: 20px;
     }
 }
 @media screen and (max-width: 991.8px) {

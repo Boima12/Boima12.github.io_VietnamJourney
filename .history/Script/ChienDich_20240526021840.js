@@ -116,21 +116,7 @@ document.getElementById("scrollToTopBtn").addEventListener("click", function() {
 });
 
 
-// Hàm để cập nhật projection dựa trên kích thước màn hình
-function updateProjection() {
-    const screenWidth = window.innerWidth;
 
-    const scale = screenWidth < 1200 ? 1400 : 1700;
-    const x = screenWidth < 1200 ? 100 : 120;
-
-    // Cập nhật projection
-    const projection = d3.geoMercator()
-        .scale(scale)
-        .center([105.85, 21.0285])   // Centered on Vietnam
-        .translate([x , 100]);
-
-    return projection;
-}
 
                     // Đọc dữ liệu từ file JSON
                     fetch('./images/vn.json')
@@ -146,9 +132,12 @@ function updateProjection() {
                                 .attr("width", width)
                                 .attr("height", height);
             
-                            // Gọi hàm để lấy projection hiện tại
-                            let projection = updateProjection();
-                            let path = d3.geoPath().projection(projection);
+                            const projection = d3.geoMercator()
+                                .scale(1700)
+                                .center([105.85, 21.0285])   // Centered on Vietnam
+                                .translate([120 , 100]);
+            
+                            const path = d3.geoPath().projection(projection);
             
                             svg.selectAll("path")
                                 .data(geojson.features)
