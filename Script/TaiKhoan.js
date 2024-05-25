@@ -3,8 +3,6 @@
 function navToIntro() {
     window.location.href = '../../index.html';
 }
-
-const container = document.getElementById('container');
 const registerBtn = document.getElementById('register');
 const loginBtn = document.getElementById('login');
 
@@ -15,8 +13,23 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
-    
+const container = document.getElementById('container');
 
+        const overlay = document.getElementById('overlay');
+        const sidebar = document.getElementById('sidebar');
+        function MenuBar() {
+            overlay.style.display = 'block';
+            sidebar.classList.add('open');
+            container.style.display = "none";
+
+        }
+        function CloseBar() {
+            overlay.style.display = 'none';
+            sidebar.classList.remove('open');
+            container.style.display = "block";
+
+        }
+    
 // navigation bar background transparency
 // const header = document.getElementById('header1');
 // function toggle_header() {

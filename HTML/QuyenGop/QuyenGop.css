@@ -210,36 +210,335 @@ header #sidebar div.sidebar-content i {
 
 
 /* Code CSS ở đây */
+div.donate {
+    width: 100%;
+    height: 129.5625rem; 
+
+    background-image: url("../../Images/QuyenGop/animal1_qg.jpeg");
+    background-position: center;
+    background-size: 100% 75.25rem;
+    background-attachment: fixed;
+}
+
+
+div.donate div.donate_top {
+    width: 100%;
+    height: 56.25rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 38rem;
+    padding-bottom: 14rem;
+
+    /* border: 1px solid red; */
+}
+
+
+div.donate div.donate_top div.deco1_para {
+    width: auto;
+    height: 22.0625rem;
+
+    display: flex;
+    gap: 1rem;
+
+    /* border: 1px solid red; */
+}
 
 
 
+div.donate div.donate_top div.deco1_para div.deco1 {
+    width: 1.375rem;
+    height: 9.8125rem;
+    background: #2B6200;
+
+    align-self: flex-start;
+}
 
 
+div.donate div.donate_top div.deco1_para div.para {
+    width: 37.5625rem;
+    height: 22.0625rem; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    /* border: 1px solid red; */
+}
 
 
+div.donate div.donate_top div.deco1_para div.para p.p1 {
+    width: 32.6875rem;
+
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
 
 
+div.donate div.donate_top div.deco1_para div.para p.p1 #txt1 {
+    color: #2B6200;
+}
 
 
+div.donate div.donate_top div.deco1_para div.para p.p2 {
+    width: 37.5625rem;
+
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 
 
+div.donate div.donate_mid {
+    width: 100%;
+    height: 73.3125rem; 
+
+    padding-left: 49rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}
 
 
+div.donate div.donate_mid div.donate_board {
+    width: 43.8125rem;
+    height: 54.6875rem; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #FFF;
+    border-radius: 2rem;
+}
 
 
+div.donate div.donate_mid div.donate_board p.p1 {
+    width: 38.3125rem; 
+
+    padding-top: 2.5rem;
+
+    color: #2B6200;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 2.925rem */
+}
 
 
+div.donate div.donate_mid div.donate_board p.p2 {
+    width: 39.375rem; 
+
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 1.95rem */
+}
 
 
+div.donate div.donate_mid div.donate_board div.deco1 {
+    width: 38.1875rem;
+    height: 0.1875rem;
+
+    background: #2B6200;
+}
 
 
+div.donate div.donate_mid div.donate_board div.hv_items {
+    width: 38.1875rem;
+    height: 21.75rem; 
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    /* border: 1px solid red; */
+}
 
 
+div.donate div.donate_mid div.donate_board div.hv_items div.item {
+    width: 17.5rem;
+    height: 10rem; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 0.625rem;
+    background: #199A0E;
+}
 
 
+div.donate div.donate_mid div.donate_board div.hv_items div.item img {
+    width: 7.5rem;
+    height: 5rem;
+
+    padding-top: 0.5rem;
+}
 
 
+div.donate div.donate_mid div.donate_board div.hv_items div.item p {
+    width: 17.5rem;
 
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 1.95rem */
+}
+
+
+div.donate div.donate_mid div.donate_board button {
+    width: 15rem;
+    height: 3.8rem; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2.5rem;
+    background: #199A0E;
+
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 2.275rem */
+}
+
+
+div.donate div.donate_mid div.donate_board p.p3 {
+    align-self: flex-end;
+
+    margin-right: 1rem;
+
+    color: rgba(0, 0, 0, 0.50);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 1.625rem */
+}
+
+
+div.donate_descrip {
+    width: 100%;
+    height: 40.1875rem; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background: #F1FBFF;
+}
+
+
+div.donate_descrip p.p1 {
+    color: #2B6200;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 3.25rem */
+}
+
+
+div.donate_descrip p.p2 {
+    width: 73.9375rem; 
+
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.6875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 2.19375rem */
+}
+
+
+div.donate_descrip div.infos {
+    width: 97.5%;
+    height: 20.1875rem; 
+
+    display: flex;
+    justify-content: space-around;
+}
+
+
+div.donate_descrip div.infos div.info_box {
+    width: 28.25rem;
+    height: 16.6875rem; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}
+
+
+div.donate_descrip div.infos div.info_box img {
+    width: 8.75rem;
+    height: 6.25rem; 
+}
+
+
+div.donate_descrip div.infos div.info_box p.box_p1 {
+    margin-top: 1rem;
+
+    color: #2B6200;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 2.19375rem */
+}
+
+
+div.donate_descrip div.infos div.info_box p.box_p2 {
+    width: 28.25rem;
+
+    color: #000;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 
 
@@ -249,13 +548,16 @@ header #sidebar div.sidebar-content i {
 
 
 /* FOOTER */
+footer {
+    padding-top: 1.5rem;
+    background-color: white;
+}
+
 footer div.up {
     display: flex;
     justify-content: space-around;
     gap: 1.2rem;
     width: 100%;
-
-    background-color: white;
 
 }
 
@@ -313,7 +615,6 @@ footer div.mid {
     width: 100%;
     padding-right: 1rem;
     padding-bottom: 1rem;
-    background-color: white;
 }
 
 
@@ -464,3 +765,54 @@ footer div.bot img.logo2 {
 }
 
 /* END RESPONSIVE DESIGN */
+
+
+
+/* animating stuff */
+.hidden {
+    opacity: 0;
+    filter: blur(5);
+    transform: translateY(35%);
+    transition: all 1s;
+}
+
+
+/* @media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+} */
+
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0%);
+}
+
+
+div.donate div.donate_top div.deco1_para div.para p.p1 {
+    transition-delay: 200ms;
+}
+
+
+div.donate div.donate_top div.deco1_para div.para p.p2 {
+    transition-delay: 400ms;
+}
+
+
+div.donate_descrip div.infos div:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+
+div.donate_descrip div.infos div:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+
+
+
+
+
+/* END animating stuff */
