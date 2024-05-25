@@ -36,12 +36,6 @@ header {
 }
 
 
-
-header div.logo {
-    justify-self: flex-start;
-}
-
-
 header div.logo img {
     width: auto;
     height: 2.9rem;
@@ -62,18 +56,19 @@ header div.logo img.logo2 {
 header div.links nav {
     display: flex;
     justify-content: space-around;
+    
     width: 100%;
 }
 
 
 header div.links nav a {
-    margin: 0;
-    padding: 0 1rem;
+    margin: 0; 
+    padding: 0 1rem; 
 
-    cursor: pointer;
+    cursor: pointer; 
 
     text-decoration: none;
-    color: white;
+    color: white; 
     font-size: 16px;
     font-weight: 600;
 }
@@ -103,14 +98,14 @@ header #overlay {
     height: 100%;
 
     background-color: rgba(0, 0, 0, 0.8);
-
+    
     z-index: 9999;
 }
 
 
 header #sidebar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; 
     float: right;
 
     position: fixed;
@@ -140,20 +135,20 @@ header #sidebar div.sidebar-content {
     flex-direction: column;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 1.5rem;
+    padding: 1.5rem; 
     width: 100%;
 }
 
 
 header #sidebar div.sidebar-content a {
-    text-align: right;
+    text-align: right; 
     text-decoration: none;
     font-size: 1.2rem;
 
     color: aliceblue;
     margin-top: 1.5rem;
 
-    margin-right: 0;
+    margin-right: 0; 
 }
 
 
@@ -169,7 +164,6 @@ header #sidebar div.sidebar-content i {
 /* END NAVIGATION BAR */
 
 
-
 /* BEGIN BODY STYLE */
 
 .body {
@@ -183,8 +177,8 @@ header #sidebar div.sidebar-content i {
 .body nav hr {
     position: absolute;
     top: 70px;
-    left: 60px;
-    width: 100px;
+    left: 175px;
+    width: 85px;
     margin: 0;
     border: 1px solid black;
 }
@@ -202,12 +196,135 @@ header #sidebar div.sidebar-content i {
 }
 
 .body .post {
+    padding: 30px;
     border-radius: 10px;
     margin-top: 15px;
     width: 67%;
-    height: 1100px;
+    height: auto;
     background-color: rgba(239, 239, 239, 0.40);
     display: flex;
+    flex-direction: column;
+}
+
+.body .post .title {
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+.body .post .event-1 {
+    padding-left: 30px;
+}
+
+.body .post .event-1 .image-event {
+    height: 300px;
+    width: 80%;
+}
+
+.body .post .event-1 .event-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.body .post .event-1 .event-infor {
+    display: flex;
+}
+
+.body .post .event-1 .event-infor .event-icon {
+    width: 5%;
+}
+
+.body .post .event-1 .event-infor .event-content ul {
+    padding: 0;
+}
+
+.body .post .event-1 .event-infor .event-content ul li {
+    list-style: none;
+    min-height: 50px;
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.body .post .cancel-event {
+    width: 25%;
+    height: 60px;
+    margin-left: 70%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #8E2222;
+}
+
+.body .post-1 {
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 67%;
+    height: auto;
+    background-color: rgba(239, 239, 239, 0.40);
+    display: flex;
+    flex-direction: column;
+}
+
+.body .post-1 .title {
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+.body .post-1 .event-1 {
+    padding-left: 30px;
+}
+
+.body .post-1 .event-1 .image-event {
+    height: 300px;
+    width: 80%;
+}
+
+.body .post-1 .event-1 .event-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.body .post-1 .event-1 .event-infor {
+    display: flex;
+}
+
+.body .post-1 .event-1 .event-infor .event-icon {
+    width: 5%;
+}
+
+.body .post-1 .event-1 .event-infor .event-content ul {
+    padding: 0;
+}
+
+.body .post-1 .event-1 .event-infor .event-content ul li {
+    list-style: none;
+    min-height: 50px;
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.body .post-1 .register-event {
+    width: 25%;
+    height: 60px;
+    margin-left: 70%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #3E8E22;
 }
 
 .body .publish {
@@ -219,147 +336,6 @@ header #sidebar div.sidebar-content i {
     background-color: rgba(239, 239, 239, 0.40);
     width: 28%;
     top: 70px;
-}
-
-.body .member {
-    left: 1320px;
-    height: 450px;
-    position: absolute;
-    border-radius: 10px;
-    background-color: rgba(239, 239, 239, 0.40);
-    width: 28%;
-    top: 300px;
-}
-
-.body .online {
-    left: 1320px;
-    height: 380px;
-    position: absolute;
-    border-radius: 10px;
-    background-color: rgba(239, 239, 239, 0.40);
-    width: 28%;
-    top: 790px;
-}
-
-.body .post .avatar {
-    margin: 40px;
-}
-
-.body .post .name {
-    font-size: 23px;
-    font-weight: bold;
-    display: flex;
-    margin-top: 40px;
-}
-
-.body .post .avatar-name {
-    position: absolute;
-    top: 140px;
-    left: 115px;
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.body .post .title {
-    text-align: left;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 0;
-}
-
-.body .post .content {
-    text-align: justify;
-    font-size: 20px;
-    font-weight: 500;
-    padding-right: 150px;
-}
-
-.body .post .photo-1 {
-    border-radius: 10px;
-    width: 83%;
-    height: 500px;
-}
-
-.body .post .container-post-1 {
-    padding-left: 10px;
-    position: relative;
-    top: 0;
-    width: 90%;
-    height: 100%;
-    display: inline-block;
-}
-
-.body .post .container-avatar {
-    width: 10%;
-    height: 100%;
-    display: inline-block;
-}
-
-.body .post .container-post-1 .post-like-comment {
-    margin-top: 20px;
-    height: 36px;
-    display: flex;
-
-}
-
-.body .post .container-post-1 .post-like-comment p {
-    font-family: Segoe UI;
-    font-weight: bold;
-    color: gray;
-    margin-left: 8px;
-    font-size: 18px;
-}
-
-.body .post .container-post-1 .comment {
-    padding: 10px 20px;
-    display: inline-flex;
-    width: 85%;
-}
-
-.body .post .container-post-1 .comment .comment-content .comment-name {
-    font-size: 19px;
-    font-weight: bold;
-    display: flex;
-    padding-left: 10px;
-}
-
-.avatar-comment {
-    width: 50px;
-}
-
-.comment-content {
-    display: inline;
-    width: 90%;
-}
-
-.comment-box {
-    width: 100%;
-    height: 100%;
-    background: white;
-    box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    height: 50px;
-    width: 77%;
-    margin-left: 15px;
-}
-
-.post-comment {
-    display: flex;
-    margin-left: 20px;
-    margin-top: 10px;
-}
-
-.avt-name {
-    color: white;
-    position: absolute;
-    top: 838px;
-    font-weight: bold;
-    left: 48px;
-    font-size: 20px;
-}
-
-.publish {
     padding: 30px;
 }
 
@@ -380,88 +356,22 @@ header #sidebar div.sidebar-content i {
     font-weight: 500;
 }
 
-.post-form {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    top: 0;
-    left: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-}
-
-.post-form-content {
-    width: 40%;
-    height: 550px;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.post-form-content form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.post-form-content h2 {
-    margin: 20px;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-}
-
-#post-close {
-    display: block;
+.body .member {
+    left: 1320px;
+    height: 450px;
     position: absolute;
-    border: 1px solid;
     border-radius: 10px;
-    padding: 10px;
-    top: 22%;
-    left: 1240px;
-    font-size: 18px;
+    background-color: rgba(239, 239, 239, 0.40);
+    width: 28%;
+    top: 300px;
 }
 
-.post-form-content .input-title {
-    width: 90%;
-    border: none;
-    font-weight: bold;
-    background-color: rgb(207, 207, 207);
-    border-radius: 10px;
-    height: 50px;
-    padding-left: 10px;
-    margin: 10px;
-}
-
-.post-form-content .input-content {
-    padding: 10px;
-    width: 90%;
-    border: none;
-    font-weight: bold;
-    background-color: rgb(207, 207, 207);
-    border-radius: 10px;
-    height: 300px;
-    padding-left: 10px;
-}
-
-.post-form-content .form-button {
-    border: none;
-    border-radius: 10px;
-    margin: 20px;
-    width: 90%;
-    height: 50px;
-    background-color: #3E8E22;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.member {
+.body .member {
     padding: 30px;
+    width: 28%;
     display: flex;
     flex-direction: column;
+    height: auto;
 }
 
 .member .title {
@@ -475,44 +385,27 @@ header #sidebar div.sidebar-content i {
     margin-bottom: 20px;
 }
 
-.member .member-infor .name-infor .name {
+.member .member-infor  .name {
     font-size: 19px;
     font-weight: bold;
     padding-left: 10px;
     width: 100%;
 }
 
-.online {
-    padding: 30px;
-}
-
-.online .title {
-    font-size: 25px;
+.avt-name {
+    font-family: Segoe UI;
+    color: white;
+    position: absolute;
+    top: 838px;
     font-weight: bold;
+    left: 48px;
+    font-size: 20px;
 }
 
-.online .member-infor {
-    display: inline-flex;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.online .member-infor .name-infor .name {
-    font-size: 19px;
-    font-weight: bold;
-    padding-left: 10px;
-    width: 100%;
-}
 
 /* END BODY STYLE */
 
-
-
 /* FOOTER */
-footer {
-    margin-top: 10px;
-}
-
 footer div.up {
     display: flex;
     justify-content: space-around;
@@ -636,7 +529,7 @@ footer div.bot img.logo2 {
         display: none;
     }
 
-    header div.bar {
+    header div.bar  {
         display: block;
     }
 

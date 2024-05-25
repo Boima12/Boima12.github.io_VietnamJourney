@@ -17,6 +17,19 @@ function CloseBar() {
 function navToIntro() {
     window.location.href = '../../index.html';
 }
+
+// BODY JS
+const postbtn = document.querySelector('#button-post')
+const postclose = document.querySelector('#post-close')
+
+console.log(postbtn)
+postbtn.addEventListener("click", function() {
+    document.querySelector('.post-form').style.display = "flex";
+})
+
+postclose.addEventListener("click", function() {
+    document.querySelector('.post-form').style.display = "none";
+})
     
 
 // navigation bar background transparency
