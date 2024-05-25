@@ -237,7 +237,7 @@ div.slider {
 
 
 div.slider div.slider_info1 {
-    width: 84.3125rem;
+    width: 80%;
     height: 22.875rem; 
 
     display: flex;
@@ -287,11 +287,11 @@ div.slider div.slider_info1 p.slider_p2 {
 
 
 div.slider div.slider_info2 {
-    width: 49.75rem;
-    height: 42rem;
+    width: 80%;
+    height: 35rem;
 
-    margin-left: -35rem;
-    margin-bottom: -12rem;
+    /* margin-left: -35rem; */
+    margin-bottom: 7rem;
 
     display: none;
     flex-direction: column;
@@ -334,10 +334,10 @@ div.slider div.slider_info2 p.slider_p2 {
 
 
 div.slider div.slider_info3 {
-    width: 84.625rem;
-    height: 34.875rem;
+    width: 80%;
+    height: 30rem;
 
-    margin-bottom: -15rem;
+    margin-bottom: 10rem;
 
     display: none;
     flex-direction: column;
@@ -353,7 +353,7 @@ div.slider div.slider_info3 p.slider_p1 {
     
     width: 45.875rem; 
 
-    color: #FFF;
+    color: black;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Raleway;
     font-size: 1.375rem;
@@ -381,6 +381,66 @@ div.slider div.slider_info3 p.slider_p2 {
 div.slider div.slider_info3 p.slider_p2 span {
     color: #52FB8C; 
 }
+
+
+div.slider2 {
+    width: auto;
+    height: 56.25rem; 
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../../Images/TrangChu/anh2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+div.slider2 div.slider_info2 {
+    width: 80%;
+    height: 30rem;
+
+    margin-bottom: 7rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+div.slider2 div.slider_info2 p.slider_p1 {
+    width: auto;
+
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 4.375rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%;
+}
+
+
+div.slider2 div.slider_info2 p.slider_p1 span {
+    color: #3C961D; 
+}
+
+
+div.slider2 div.slider_info2 p.slider_p2 {
+    width: auto; 
+
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 1.7875rem */
+}
+
+
 
 
 
@@ -436,7 +496,7 @@ div.authors div.people {
 
 
 div.authors div.people div.person {
-    width: 20rem;
+    width: 22%;
     height: 22rem;
 
     display: flex;
@@ -490,12 +550,13 @@ div.explore {
 
     width: 100%;
     height: auto; 
-    margin-top: 7.5rem;
 
     /* padding-left: 10%;
     padding-right: 10%; */
 
     /* background-color: #03440A; */
+
+    /* border: 1px solid red; */
 }
 
 
@@ -504,6 +565,7 @@ div.explore div.para {
     height: 13.5625rem; 
     
     padding-left: 4rem;
+    padding-right: 4rem;
     margin-bottom: 5rem;
 }
 
@@ -554,7 +616,7 @@ div.explore div.menuitems div.newbox {
     justify-content: space-between;
     align-items: center;
 
-    width: 34.375rem;
+    width: 30rem;
     height: 34.375rem;
     margin-bottom: 3rem;
     border-radius: 1rem;
@@ -802,7 +864,7 @@ footer div.bot img.logo2 {
 
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 1520px) {
+@media (max-width: 1540px) {
     div.explore div.menuitems div.newbox {
         width: 27rem;
     }
@@ -825,6 +887,110 @@ footer div.bot img.logo2 {
         right: -30%;
         width: 30%;
     }
+
+
+    /* authors */
+    div.authors {
+        height: auto;
+    }
+
+
+    div.authors div.authors_p p.authors_p2 {
+        width: auto;
+    }
+
+
+    div.authors div.people {
+        flex-direction: column;
+        gap: 3rem;
+
+        margin-top: 2rem;
+    }
+
+
+    div.authors div.people div.person {
+        width: 90%;
+        height: 8rem;
+
+        padding-left: 1rem;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    
+        background-color: white;
+        border-radius: 1rem;
+    }
+
+
+    div.authors div.people div.person img {
+        width: 7rem;
+        height: 7rem; 
+        border-radius: 7rem;
+    }
+
+
+    div.authors div.people div.person p.title {
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Raleway;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 130%; /* 3.25rem */
+
+        margin-left: 1rem;
+    }
+
+
+    div.authors div.people div.person p.descrip {
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Raleway;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; /* 1.95rem */
+
+        margin-left: 1rem;
+        padding-top: 2.2rem;
+    }
+    /* END authors */
+
+
+
+
+
+    /* explore */
+    div.explore div.para p.p2 {
+        width: auto;
+    
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Raleway;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 130%; /* 1.95rem */
+    }
+
+
+    div.explore div.menuitems div.newbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+        width: 40%;
+        height: 34.375rem;
+        margin-bottom: 3rem;
+        border-radius: 1rem;
+    
+        background-color: #ffffff;
+    }
+
+    /* END explore */
 }
 
 
@@ -844,6 +1010,51 @@ footer div.bot img.logo2 {
     footer div.up #contacts {
         width: 100%;
     }
+
+
+
+    /* slider */
+    div.slider {
+        display: none;
+    }
+
+
+    div.slider2 {
+        display: flex;
+    }
+    /* END slider */
+
+
+
+    /* explore */
+    div.explore div.para p.p2 {
+        width: auto;
+    
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Raleway;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 130%; /* 1.95rem */
+    }
+
+
+    div.explore div.menuitems div.newbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+        width: 30rem;
+        height: 34.375rem;
+        margin-bottom: 3rem;
+        border-radius: 1rem;
+    
+        background-color: #ffffff;
+    }
+
+    /* END explore */
 }
 
 
@@ -887,6 +1098,42 @@ footer div.bot img.logo2 {
     footer div.bot img.logo2 {
         display: block;
     }
+
+
+    /* authors */
+    div.authors div.people div.person img {
+        width: 6rem;
+        height: 6rem; 
+        border-radius: 6rem;
+    }
+
+
+    div.authors div.people div.person p.title {
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Raleway;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 130%; /* 3.25rem */
+
+        margin-left: 1rem;
+    }
+
+
+    div.authors div.people div.person p.descrip {
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Raleway;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; /* 1.95rem */
+
+        margin-left: 1rem;
+        padding-top: 2.2rem;
+    }
+    /* END authors */
 }
 
 

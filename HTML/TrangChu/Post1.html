@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Chiến Dịch</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../Images/yo.ico">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Thư viện jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Thư viện Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Thư viện animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Post.css">
+
+    <!-- JavaScript -->
+    <script>
+        $(document).ready(function () {
+            // Bắt sự kiện cuộn trang
+            $(window).scroll(function () {
+                // Kiểm tra xem phần tử cần thực hiện hiệu ứng đã hiển thị trên màn hình hay chưa
+                $('.col-md-6').each(function () {
+                    var pos = $(this).offset().top;
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + $(window).height() - 100) {
+                        // Số 100 là khoảng cách màn hình cần cuộn để kích hoạt hiệu ứng
+                        $(this).addClass("animate__animated animate__slideInLeft"); // Thêm lớp animate__slideInLeft để thực hiện hiệu ứng trượt
+                    }
+                });
+            });
+        });
+    </script>
+    <style>
+        .animate__animated {
+            animation-duration: 1s; /* Độ dài của hiệu ứng */
+        }
+
+        .animate__slideInLeft {
+            animation-name: slideInLeft; /* Tên của hiệu ứng */
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%); /* Điểm bắt đầu của hiệu ứng */
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0); /* Điểm kết thúc của hiệu ứng */
+                opacity: 1;
+            }
+        } .col-md-6 p{
+            font-size: 1.3rem;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: #FFF4E6;">
+    <!-- header là Navigation bar -->
+    <header id="header1">
+        <div class="logo">
+            <img class="logo1" src="../../Images/header1.png" onclick="navToIntro()" style="height: 40px;">
+            <img class="logo2" src="../../Images/header2.png" onclick="navToIntro()">
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../TrangChu/TrangChu.html">TRANG CHỦ</a>
+                <a href="../CongDong/CongDong.html">CỘNG ĐỒNG</a>
+                <a href="../ChienDich/ChienDich.html">CHIẾN DỊCH</a>
+                <a href="../Nhom/Nhom.html">NHÓM</a>
+                <a href="../QuyenGop/QuyenGop.html">QUYÊN GÓP</a>
+                <a href="../TaiKhoan/TaiKhoan.html">TÀI KHOẢN</a>
+            </nav>
+        </div>
+
+        <div class="bar" onclick="MenuBar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div id="overlay"></div>
+
+        <div id="sidebar">
+            <div class="sidebar-content">
+                <div style="color: aliceblue;text-align: right;margin-top:0;" onclick="CloseBar()"><i class="fa-solid fa-bars"></i></div>
+                <!-- <p>VỀ CHÚNG TÔI <i class="fa-regular fa-address-card"></i></p> -->
+                <a href="../TrangChu/TrangChu.html">TRANG CHỦ <i class="fa-solid fa-house"></i></a>
+                <a href="../CongDong/CongDong.html">CỘNG ĐỒNG <i class="fa-solid fa-earth-americas"></i></a>
+                <a href="../ChienDich/ChienDich.html">CHIẾN DỊCH <i class="fa-solid fa-fire"></i></a>
+                <a href="../Nhom/Nhom.html">NHÓM <i class="fa-solid fa-people-group"></i></a>
+                <a href="../QuyenGop/QuyenGop.html">QUYÊN GÓP <i class="fa-solid fa-hand-holding-dollar"></i></a>
+                <a href="../TaiKhoan/TaiKhoan.html">TÀI KHOẢN <i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+    <div style="height: 4rem;"></div> <!-- Cách một khoảng cho navigation bar -->
+    <p style="text-align: center;font-size: 2rem;"> Các lợi ích quan trọng của hổ vằn mà chúng ta không biết</p>
+
+    <div class="container">
+        <!-- Row 1 -->
+        <div class="row">
+            <div class="col-md-6">
+                <img src="Image/hinh-anh-con-ho-va-tuyet-trang_091610239.jpg" style="width: 100%;height: auto;object-fit: cover;">
+            </div>
+            <div class="col-md-6">
+                <p style="font-size: x-large;">Bảo vệ hệ sinh thái :</p>
+                <p>Hổ là loài săn mồi đỉnh cao trong chuỗi thức ăn, giúp kiểm soát số lượng và sức khỏe của các loài con mồi, từ đó duy trì cân bằng sinh thái. Bằng cách săn bắt những con vật yếu và bệnh tật, hổ giúp đảm bảo sự khỏe mạnh của quần thể con mồi.</p>
+                <p style="font-size: x-large;">Bảo tồn đa dạng sinh học :</p>
+                <p> Việc bảo vệ hổ đòi hỏi bảo vệ môi trường sống của chúng, điều này cũng giúp bảo tồn nhiều loài động, thực vật khác trong cùng hệ sinh thái.</p>
+            </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row">
+            <div class="col-md-6">
+                <p style="font-size: x-large;">Hấp dẫn du lịch sinh thái :</p>
+                <p>Hổ là một trong những loài động vật thu hút khách du lịch nhiều nhất. Du lịch sinh thái có thể mang lại nguồn thu lớn cho các khu bảo tồn và công viên quốc gia, từ đó tạo nguồn lực cho việc bảo tồn hổ và môi trường sống của chúng.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="Image/loai-ho-la-bieu-tuong-cua-quoc-gia-nao-3.jpg" style="width: 100%;height: auto;object-fit: cover;">
+            </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="row">
+            <div class="col-md-6" style="margin-top: 1rem;">
+                <img src="Image/thuyet-minh-ve-loai-dong-vat-hoang-da-loai-ho.jpg" style="width: 100%;height: auto;object-fit: cover;">
+            </div>
+            <div class="col-md-6">
+                <p style="font-size: x-large;">Duy trì cân bằng môi trường sống :</p>
+                <p>Hổ giúp duy trì sự cân bằng của hệ sinh thái rừng bằng cách kiểm soát số lượng các loài con mồi như hươu, nai và lợn rừng. Điều này giúp ngăn chặn sự phát triển quá mức của thảm thực vật và bảo vệ môi trường sống của nhiều loài khác.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="up">
+            <div id="about">
+                <h2>Chúng tôi</h2>
+                <p>chúng tôi là những người yêu thiên nhiên và ủng hộ môi trường. Tận dụng sức mạnh của cộng đồng và giáo dục trong việc thúc đẩy sự thay đổi tích cực đến môi trường, từ đó tạo ra những câu chuyện truyền cảm hứng và lời khuyên thiết thực để giúp mọi người nhận ra ai cũng có thể hành động vì môi trường.<br>
+                    Hãy tham gia cùng chúng tôi trên hành trình hướng tới một thế giới xanh hơn, lành mạnh hơn cho tất cả mọi người.
+                </p>
+            </div>
+
+            <div id="quickLinks">
+                <h2>Links</h2>
+                <a href="../../HTML/TrangChu/TrangChu.html">Trang Chủ</a>
+                <a href="../../HTML/CongDong/CongDong.html">Cộng Đồng</a>
+                <a href="../../HTML/ChienDich/ChienDich.html">Chiến Dịch</a>
+                <a href="../../HTML/Nhom/Nhom.html">Nhóm</a>
+                <a href="../../HTML/QuyenGop/QuyenGop.html">Quyên Góp</a>
+                <a href="../../HTML/TaiKhoan/TaiKhoan.html">Tài Khoản</a>
+            </div>
+
+            <div id="contacts">
+                <h2>Liên Lạc</h2>
+                <p>baochp.23it@vku.udn.vn</p>
+                <p>+94897538627</p>
+            </div>
+        </div>
+
+        <div class="mid">
+            <a href="https://www.youtube.com/channel/UC1cpkfqLNp6I1HgNy2MUhUg"><img src="../../Images/youtube_icon.png"></a>
+            <a href="https://discord.com/invite/45fkbZcj"><img src="../../Images/discord_icon.png"></a>
+            <a href="https://x.com/dog_rates"><img src="../../Images/twitter_icon.png"></a>
+            <a href="https://web.facebook.com/vku.udn.vn/?_rdc=1&_rdr"><img src="../../Images/facebook_icon.png"></a>
+        </div>
+
+        <div class="bot">
+            <img class="logo1" src="../../Images/header1.png">
+            <img class="logo2" src="../../Images/header2.png">
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../Script/ChienDich.js"></script>
+    <noscript>Your Browser doesn't support JavaScript</noscript>
+
+</body>
+
+</html>
