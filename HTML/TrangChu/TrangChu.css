@@ -21,6 +21,18 @@
 }
 
 
+/* body background color/theme */
+#body1 {
+    background: var(--BG, linear-gradient(180deg, rgba(0, 0, 0, 0.00) 5.1%, rgba(5, 5, 5, 0.42) 17.61%, rgba(5, 22, 9, 0.84) 22.37%, #092710 27.04%, #03440A 65.93%, #03440A 90.74%, #03440A 115.54%));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+/* END body background color/theme */
+
+
 
 /* NAVIGATION BAR */
 header {
@@ -210,28 +222,344 @@ header #sidebar div.sidebar-content i {
 
 
 /* Code CSS ở đây */
+div.slider {
+    width: auto;
+    height: 82.5rem; 
+
+    background-image: url("../../Images/TrangChu/slider_bg.png");
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div.slider div.slider_info {
+    width: 85%;
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}
+
+
+div.slider div.slider_info p.slider_p1 {
+    width: 61.875rem;
+    align-self: flex-start;
+
+    color: #000000;
+
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 7.8rem */
+}
+
+
+div.slider div.slider_info p.slider_p1 #slider_p1_t1 {
+    color: white;
+}
+
+
+div.slider div.slider_info p.slider_p2 {
+    width: 52.6875rem; 
+    align-self: flex-end;
+    padding-bottom: 23rem;
+
+    color: #ffffff;
+
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 1.95rem */
+}
+
+
+div.authors {
+    width: auto;
+    height: 50.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 6rem;
+    margin-top: 15rem;
+
+    /* background-color: #03440A; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    /* border: 1px solid red; */
+}
+
+
+div.authors div.authors_p p.authors_p1 {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 3.9rem */
+}
+
+
+div.authors div.authors_p p.authors_p2 {
+    width: 79.9375rem;
+
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 1.95rem */
+}
+
+
+div.authors div.people {
+    display: flex;
+    justify-content: space-evenly;
+
+    /* border: 1px solid red; */
+}
+
+
+div.authors div.people div.person {
+    width: 20rem;
+    height: 22rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 1rem;
+}
+
+
+div.authors div.people div.person img {
+    width: 9rem;
+    height: 9rem; 
+    border-radius: 9rem;
+    margin-top: -60px;
+}
+
+
+div.authors div.people div.person p.title {
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 130%; /* 3.25rem */
+
+    margin-top: 30px;
+}
+
+
+div.authors div.people div.person p.descrip {
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 1.95rem */
+}
+
+
+/* KHAM PHA */
+div.explore {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 100%;
+    height: auto; 
+    margin-top: 15rem;
+
+    /* padding-left: 10%;
+    padding-right: 10%; */
+
+    /* background-color: #03440A; */
+}
+
+
+div.explore div.para {
+    width: 100%;
+    height: 13.5625rem; 
+    
+    padding-left: 4rem;
+    margin-bottom: 5rem;
+}
+
+
+div.explore div.para p.p1 {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 3.9rem */
+}
+
+
+
+div.explore div.para p.p2 {
+    width: 87.8125rem;
+
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 1.95rem */
+}
+
+
+div.explore div.menuitems {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    /* margin-bottom: 20rem; */
+
+    /* border: 1px solid red; */
+}
+
+
+div.explore div.menuitems div.newbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 34.375rem;
+    height: 34.375rem;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+
+    background-color: #ffffff;
+}
+
+
+div.explore div.menuitems div.newbox div.newbox_top {
+    width: 34.375rem;
+    height: 17.5rem;
+    border-radius: 1rem 1rem 0rem 0rem; 
+}
+
+
+div.explore div.menuitems div.newbox div.newbox_top img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 1rem 0rem 0rem; 
+}
+
+
+div.explore div.menuitems div.newbox div.newbox_mid {
+    width: 31.125rem;
+    height: 6.75rem; 
+    margin-top: -5rem;
+    padding-left: 1rem;
+
+    align-self: flex-start;
+}
+
+
+div.explore div.menuitems div.newbox div.newbox_mid p.p1 {
+    color: rgba(123, 123, 123, 0.5);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 1.95rem */
+}
+
+
+div.explore div.menuitems div.newbox div.newbox_mid p.p2 {
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 1.95rem */
+
+    margin-top: -0.5rem;
+}
+
+
+div.explore div.menuitems div.newbox div.newbox_bot {
+    padding-bottom: 1.2rem;
+    align-self: center;
+}
+
+
+div.explore div.menuitems div.newbox div.newbox_bot button {
+    width: 12.7rem;
+    height: 3rem; 
+
+    border-radius: 1.25rem;
+    border: 1px solid #000;
+    background-color: #ffffff;
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 1.95rem */
+}
+
+
+div.explore div.morebt {
+    margin-top: 2.5rem;
+    align-self: center;
+    margin-bottom: 2.5rem;
+}
+
+
+div.explore div.morebt button {
+    width: 12.7rem;
+    height: 3rem; 
+
+    border-radius: 1.25rem;
+    border: 1px solid #000;
+    background-color: #ffffff;
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 1.95rem */
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* END KHAM PHA */
 
 
 
@@ -249,6 +577,12 @@ header #sidebar div.sidebar-content i {
 
 
 /* FOOTER */
+
+footer {
+    padding-top: 1.5rem;
+    background-color: white;
+}
+
 footer div.up {
     display: flex;
     justify-content: space-around;
@@ -464,3 +798,43 @@ footer div.bot img.logo2 {
 }
 
 /* END RESPONSIVE DESIGN */
+
+
+
+
+/* animating stuff */
+.hidden {
+    opacity: 0;
+    filter: blur(5);
+    transform: translateY(35%);
+    transition: all 1s;
+}
+
+
+/* @media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+} */
+
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0%);
+}
+
+
+div.authors div.people div.person:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+div.authors div.people div.person:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+div.authors div.people div.person:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+/* END animating stuff */
