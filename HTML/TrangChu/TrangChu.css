@@ -652,7 +652,7 @@ div.explore div.menuitems div.newbox div.newbox_mid {
 div.explore div.menuitems div.newbox div.newbox_mid p.p1 {
     color: rgba(123, 123, 123, 0.5);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Raleway;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 700;
@@ -697,7 +697,7 @@ div.explore div.menuitems div.newbox div.newbox_bot button {
 
 
 div.explore div.morebt {
-    margin-top: 2.5rem;
+    margin-top: -0.5rem;
     align-self: center;
     margin-bottom: 2.5rem;
 }
@@ -1025,6 +1025,41 @@ footer div.bot img.logo2 {
     /* END slider */
 
 
+    /* authors */
+    div.authors div.people div.person img {
+        width: 6rem;
+        height: 6rem; 
+        border-radius: 6rem;
+    }
+
+
+    div.authors div.people div.person p.title {
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Raleway;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 130%; /* 3.25rem */
+
+        margin-left: 1rem;
+    }
+
+
+    div.authors div.people div.person p.descrip {
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Raleway;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; /* 1.95rem */
+
+        margin-left: 1rem;
+        padding-top: 2.2rem;
+    }
+    /* END authors */
+
 
     /* explore */
     div.explore div.para p.p2 {
@@ -1098,13 +1133,40 @@ footer div.bot img.logo2 {
     footer div.bot img.logo2 {
         display: block;
     }
+}
+
+
+@media (max-width: 560px) {
+    header div.logo img {
+        margin-left: 8rem;
+    }
+
+
+    header #sidebar {
+        right: -60%;
+        width: 60%;
+    }
 
 
     /* authors */
-    div.authors div.people div.person img {
-        width: 6rem;
-        height: 6rem; 
-        border-radius: 6rem;
+    div.authors div.people {
+        gap: 4rem;
+    }
+
+
+    div.authors div.people div.person {
+        width: auto;
+        height: 10rem;
+
+        padding-left: 0rem;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: white;
+        border-radius: 1rem;
     }
 
 
@@ -1117,6 +1179,7 @@ footer div.bot img.logo2 {
         font-weight: bold;
         line-height: 130%; /* 3.25rem */
 
+        margin-top: 0.5rem;
         margin-left: 1rem;
     }
 
@@ -1130,22 +1193,27 @@ footer div.bot img.logo2 {
         font-weight: 500;
         line-height: 130%; /* 1.95rem */
 
-        margin-left: 1rem;
-        padding-top: 2.2rem;
+        padding-top: 0px;
     }
     /* END authors */
-}
 
 
-@media (max-width: 560px) {
-    header div.logo img {
-        margin-left: 8rem;
+
+    /* explore */
+    div.explore div.para p.p2 {
+        height: auto;
+        margin-bottom: 1rem;
+    
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Raleway;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 130%; /* 1.95rem */
     }
+    /* END explore */
 
-    header #sidebar {
-        right: -60%;
-        width: 60%;
-    }
 }
 
 
