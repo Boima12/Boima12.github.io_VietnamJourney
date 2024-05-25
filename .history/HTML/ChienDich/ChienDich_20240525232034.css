@@ -196,22 +196,18 @@ header #sidebar div.sidebar-content i {
     bottom: 20px; /* Khoảng cách từ dưới lên */
     right: 20px; /* Khoảng cách từ phải qua */
     z-index: 99; /* Đảm bảo nút nằm trên mọi nội dung khác */
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 18px;
     border: none;
     outline: none;
-    background-color: #20d9d9; /* Màu nền của nút */
+    background-color: #007bff; /* Màu nền của nút */
     color: white; /* Màu chữ của nút */
     cursor: pointer;
+    padding: 15px; /* Kích thước nút */
     border-radius: 50%; /* Đảm bảo nút là hình tròn */
-    width: 50px;
-    height: 50px;
-    transform: translateY(-50%);
 }
   
 #scrollToTopBtn:hover {
-    background-color: #b9fefe; /* Màu nền của nút khi di chuột qua */
-    color: #000000;
+    background-color: #555; /* Màu nền của nút khi di chuột qua */
 }
 
 
