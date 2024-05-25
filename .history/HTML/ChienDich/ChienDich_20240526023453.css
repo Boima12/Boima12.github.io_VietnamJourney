@@ -395,9 +395,6 @@ color: #000000;
 
 
 @media screen and (max-width: 1199.8px) {
-    .section-one {
-        padding-bottom: 20px;
-    }
     .section-one .map {
         height: 550px;
     }
@@ -430,19 +427,30 @@ color: #000000;
         margin-bottom: 40px;
     }  
     .right .search .inner-search {
-        font-size: 14px;
+        background-color: #B9CFBE;
+        height: 100%;
+        width: 70%;
+        border-radius: 40px;
+        border: none;
+        padding: 5px 15px 5px 15px;
+        font-size: 16px;
+        font-weight: 700;
     }  
     .right .search #province {
-        font-size: 14px;
+        background-color: #B9CFBE;
+        height: 100%;
+        width: 28%;
+        border-radius: 40px;
+        border: none;
+        padding: 5px 15px 5px 15px;
+        font-size: 16px;
+        font-weight: 700;
     }
 }
 @media screen and (max-width: 991.8px) {
 
 }
 @media screen and (max-width: 767.8px){
-
-}
-@media screen and (max-width: 575.8px){
 
 }
 
@@ -551,78 +559,11 @@ color: #000000;
     border: 3px solid #1fd225 
 }
 
-@media screen and (max-width: 1199.8px) {
-    .campaign .title .inner-title {
-        font-size: 30px;
-    }
-    .campaign .title .inner-line {
-        height: 5px;
-        width: 80px;
-    }
-    .campaign .title .inner-province {
-        font-size: 30px;
-    }
-    .campaign .item {
-        height: 450px;
-        border-radius: 0px 40px 0px 40px;
-        position: relative;
-    }   
-    .campaign .item img{
-        border-top-right-radius: 40px;
-    }
-    .campaign .item .content {
-        padding: 15px;
-    }
-    .campaign .item .content p {
-        font-size: 16px;
-        font-weight: 500;
-    }
-    .campaign .item .content p i {
-        width: 20px;
-    }    
-    .campaign .item .content p .count{
-        font-weight: 700;
-        color: #00FF0A;
-        font-size: 20px;
-    }
-    .campaign .item button {
-        font-size: 16px;
-    }
-    .campaign .item .title {
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-        font-size: 18px;
-    }
-
-}
-@media screen and (max-width: 991.8px) {
-
-}
-@media screen and (max-width: 767.8px){
-
-}
-@media screen and (max-width: 575.8px){
-
-}
-
 /* SECTION-TWO */
 .section-two {
     background-color: var(--color-bg);
     padding-top: 20px;
     padding-bottom: 70px
-}
-
-@media screen and (max-width: 1199.8px) {
-    
-}
-@media screen and (max-width: 991.8px) {
-
-}
-@media screen and (max-width: 767.8px){
-
-}
-@media screen and (max-width: 575.8px){
-
 }
 
 /* END SECTION-TWO */
@@ -641,19 +582,6 @@ color: #000000;
     padding: 0px 30px 0px 30px;
 }
 
-@media screen and (max-width: 1199.8px) {
-    
-}
-@media screen and (max-width: 991.8px) {
-
-}
-@media screen and (max-width: 767.8px){
-
-}
-@media screen and (max-width: 575.8px){
-
-}
-
 /* END SECTION THREE  */
 
 /* SECTION FOUR  */
@@ -668,19 +596,6 @@ color: #000000;
     display: flex;
     justify-content: space-between;
     padding: 0px 30px 0px 30px;
-}
-
-@media screen and (max-width: 1199.8px) {
-    
-}
-@media screen and (max-width: 991.8px) {
-
-}
-@media screen and (max-width: 767.8px){
-
-}
-@media screen and (max-width: 575.8px){
-
 }
 
 /* END SECTION FOUR  */
@@ -737,35 +652,6 @@ color: #000000;
     transition: transform 0.5s ease; /* Thêm hiệu ứng chuyển đổi mượt mà */
 }
 
-
-@media screen and (max-width: 1199.8px) {
-    .section-five {
-        padding-top: 50px;
-    }
-    .section-five .item {
-        height: 500px;
-        padding: 25px;
-    }  
-    .section-five .item .content {
-        top: -60px;
-    }
-    .section-five .item .content .inner-title {
-        font-size: 18px;
-    }
-    .section-five .item .content .inner-desc {
-        font-size: 12px;
-    }
-}
-@media screen and (max-width: 991.8px) {
-
-}
-@media screen and (max-width: 767.8px){
-
-}
-@media screen and (max-width: 575.8px){
-
-}
-
 /* END SECTION FIVE  */
 
 /* SECTION SIX  */
@@ -817,35 +703,6 @@ color: #000000;
     color: var(--color-desc);
     text-align: center;
     margin-bottom: 20px;
-}
-
-@media screen and (max-width: 1199.8px) {
-    .section-six {
-        padding-top: 20px;
-        padding-bottom: 40px;
-    }
-    .section-six .title {
-        font-size: 30px;
-        margin-bottom: 15px;
-    }
-    .section-six .inner {
-        padding: 15px;
-    }
-    .section-six .item .title {
-        font-size: 22px;
-    }
-    .section-six .item .desc {
-        font-size: 16px;
-    }
-}
-@media screen and (max-width: 991.8px) {
-
-}
-@media screen and (max-width: 767.8px){
-
-}
-@media screen and (max-width: 575.8px){
-
 }
 
 /*END SECTION SIX  */

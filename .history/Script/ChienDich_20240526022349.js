@@ -120,8 +120,8 @@ document.getElementById("scrollToTopBtn").addEventListener("click", function() {
 function updateProjection() {
     const screenWidth = window.innerWidth;
 
-    const scale = screenWidth < 1200 ? 1400 : 1700;
-    const x = screenWidth < 1200 ? 100 : 120;
+    const scale = screenWidth < 1200 ? 1450 : 1700;
+    const x = screenWidth < 1200 ? 80 : 120;
 
     // Cập nhật projection
     const projection = d3.geoMercator()

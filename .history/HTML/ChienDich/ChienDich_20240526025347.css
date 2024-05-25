@@ -820,23 +820,7 @@ color: #000000;
 }
 
 @media screen and (max-width: 1199.8px) {
-    .section-six {
-        padding-top: 20px;
-        padding-bottom: 40px;
-    }
-    .section-six .title {
-        font-size: 30px;
-        margin-bottom: 15px;
-    }
-    .section-six .inner {
-        padding: 15px;
-    }
-    .section-six .item .title {
-        font-size: 22px;
-    }
-    .section-six .item .desc {
-        font-size: 16px;
-    }
+    
 }
 @media screen and (max-width: 991.8px) {
 

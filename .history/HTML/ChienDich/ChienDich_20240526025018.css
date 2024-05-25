@@ -589,8 +589,16 @@ color: #000000;
         font-size: 16px;
     }
     .campaign .item .title {
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.31);
+        position: absolute;
+        top: 20px;
+        left: -10px;
+        background-color: var(--color-green);
+        display: inline-block;
+        padding: 5px 20px 5px 20px;
+        width: 60%;
         border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
+        border-bottom-right-radius: 10px;
         font-size: 18px;
     }
 
@@ -739,22 +747,7 @@ color: #000000;
 
 
 @media screen and (max-width: 1199.8px) {
-    .section-five {
-        padding-top: 50px;
-    }
-    .section-five .item {
-        height: 500px;
-        padding: 25px;
-    }  
-    .section-five .item .content {
-        top: -60px;
-    }
-    .section-five .item .content .inner-title {
-        font-size: 18px;
-    }
-    .section-five .item .content .inner-desc {
-        font-size: 12px;
-    }
+    
 }
 @media screen and (max-width: 991.8px) {
 
@@ -820,23 +813,7 @@ color: #000000;
 }
 
 @media screen and (max-width: 1199.8px) {
-    .section-six {
-        padding-top: 20px;
-        padding-bottom: 40px;
-    }
-    .section-six .title {
-        font-size: 30px;
-        margin-bottom: 15px;
-    }
-    .section-six .inner {
-        padding: 15px;
-    }
-    .section-six .item .title {
-        font-size: 22px;
-    }
-    .section-six .item .desc {
-        font-size: 16px;
-    }
+    
 }
 @media screen and (max-width: 991.8px) {
 

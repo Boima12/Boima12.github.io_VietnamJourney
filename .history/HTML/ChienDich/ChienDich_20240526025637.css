@@ -835,7 +835,11 @@ color: #000000;
         font-size: 22px;
     }
     .section-six .item .desc {
-        font-size: 16px;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--color-desc);
+        text-align: center;
+        margin-bottom: 20px;
     }
 }
 @media screen and (max-width: 991.8px) {

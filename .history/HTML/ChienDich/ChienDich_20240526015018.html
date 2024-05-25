@@ -32,6 +32,7 @@
 </HEAD>
 
 
+
 <BODY style="background-color: #FFF4E6;">
     
     <!-- header là Navigation bar -->
@@ -78,7 +79,51 @@
     </header>
     <div style="height: 3rem;"></div> <!-- Cách một khoảng cho navigation bar -->
 
-    <button id="scrollToTopBtn" title="Cuộn lên đầu"><i class="fa-regular fa-circle-up"></i></button>
+
+<!-- 
+    <style>
+        .map-container {
+            width: 500px;
+            height: 600px;
+            position: relative;
+        }
+        .province {
+            fill: #ee0101;
+            stroke: #000000;
+            stroke-width: 0.5;
+        }
+        .province:hover {
+            fill: rgb(230, 230, 147); /* Đổi màu thành màu vàng */
+        }
+
+        .tooltip {
+        position: absolute;
+        background-color: white;
+        border: 1px solid black;
+        padding: 5px;
+        display: none;
+        z-index: 999;
+        color: #000000;
+        }
+
+        .highlight {
+            fill: yellow;
+        }
+    </style> -->
+<!-- 
+    <style>
+        html {
+                scroll-behavior: smooth;
+        }
+    </style> -->
+
+
+
+    
+
+
+
+<button id="scrollToTopBtn" title="Cuộn lên đầu"><i class="fa-regular fa-circle-up"></i></button>
 
     
 <!-- LÀM Ở ĐÂY -->
@@ -87,6 +132,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-5  col-lg-5 col-md-12 col-sm-12 col-12">
+                    <!-- <div class="map">
+                        <img src="./images/vietnam.svg" alt="bản đồ việt nam">
+                    </div> -->
+                    <!-- <div class="map">
+                        <object class="img" type="image/svg+xml" data="./images/vietnam.svg" alt="bản đồ việt nam"></object>
+                    </div> -->
                     <div class="map">
                         <div class="map-container">
                             <div class="tooltip"></div>
@@ -96,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
                     <div class="right">
                         <div class="search">
