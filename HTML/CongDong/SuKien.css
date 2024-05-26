@@ -220,7 +220,7 @@ header #sidebar div.sidebar-content i {
 
 .body .post .event-1 .image-event {
     height: 300px;
-    width: 80%;
+    width: 96%;
 }
 
 .body .post .event-1 .event-title {
@@ -250,7 +250,7 @@ header #sidebar div.sidebar-content i {
 }
 
 .body .post .cancel-event {
-    width: 25%;
+    width: 30%;
     height: 60px;
     margin-left: 70%;
     border: none;
@@ -264,7 +264,7 @@ header #sidebar div.sidebar-content i {
 .body .post-1 {
     padding: 30px;
     border-radius: 10px;
-    margin-top: 15px;
+    margin-top: 30px;
     width: 67%;
     height: auto;
     background-color: rgba(239, 239, 239, 0.40);
@@ -286,7 +286,7 @@ header #sidebar div.sidebar-content i {
 
 .body .post-1 .event-1 .image-event {
     height: 300px;
-    width: 80%;
+    width: 96%;
 }
 
 .body .post-1 .event-1 .event-title {
@@ -316,7 +316,7 @@ header #sidebar div.sidebar-content i {
 }
 
 .body .post-1 .register-event {
-    width: 25%;
+    width: 30%;
     height: 60px;
     margin-left: 70%;
     border: none;
@@ -329,7 +329,7 @@ header #sidebar div.sidebar-content i {
 
 .body .publish {
     margin-top: 15px;
-    left: 1320px;
+    left: 1040px;
     height: 180px;
     position: absolute;
     border-radius: 10px;
@@ -357,7 +357,7 @@ header #sidebar div.sidebar-content i {
 }
 
 .body .member {
-    left: 1320px;
+    left: 1040px;
     height: 450px;
     position: absolute;
     border-radius: 10px;

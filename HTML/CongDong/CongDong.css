@@ -214,7 +214,7 @@ header #sidebar div.sidebar-content i {
 
 .body .publish {
     margin-top: 15px;
-    left: 1320px;
+    left: 1040px;
     height: 180px;
     position: absolute;
     border-radius: 10px;
@@ -224,7 +224,7 @@ header #sidebar div.sidebar-content i {
 }
 
 .body .member {
-    left: 1320px;
+    left: 1040px;
     height: 450px;
     position: absolute;
     border-radius: 10px;
@@ -234,7 +234,7 @@ header #sidebar div.sidebar-content i {
 }
 
 .body .online {
-    left: 1320px;
+    left: 1040px;
     height: 380px;
     position: absolute;
     border-radius: 10px;
@@ -244,7 +244,7 @@ header #sidebar div.sidebar-content i {
 }
 
 .body .post .avatar {
-    margin: 40px;
+    margin: 40px 35px;
 }
 
 .body .post .name {
@@ -256,10 +256,10 @@ header #sidebar div.sidebar-content i {
 
 .body .post .avatar-name {
     position: absolute;
-    top: 140px;
-    left: 115px;
+    top: 137px;
+    left: 109px;
     color: white;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
 }
 
@@ -274,20 +274,20 @@ header #sidebar div.sidebar-content i {
     text-align: justify;
     font-size: 20px;
     font-weight: 500;
-    padding-right: 150px;
+    padding-right: 130px;
 }
 
 .body .post .photo-1 {
     border-radius: 10px;
     width: 83%;
-    height: 500px;
+    height: 470px;
 }
 
 .body .post .container-post-1 {
-    padding-left: 10px;
+    padding-left: 30px;
     position: relative;
     top: 0;
-    width: 90%;
+    width: 100%;
     height: 100%;
     display: inline-block;
 }
@@ -350,6 +350,14 @@ header #sidebar div.sidebar-content i {
     display: flex;
     margin-left: 20px;
     margin-top: 10px;
+}
+
+.avatar-comment .avt-name {
+    left: 68px;
+}
+
+.post-comment .avt-name {
+    left: 68px;
 }
 
 .avt-name {
@@ -467,7 +475,7 @@ header #sidebar div.sidebar-content i {
 }
 
 .member .title {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: bold;
 }
 
