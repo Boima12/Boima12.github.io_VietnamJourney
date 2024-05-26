@@ -399,21 +399,26 @@ nav .event {
 }
 
 .post-form-content h2 {
-    margin: 20px;
+    margin: 20px 20px 0px 20px;
     font-size: 25px;
     font-weight: bold;
+    width: 100%;
+}
+
+.top-conatainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     text-align: center;
+    justify-content: center;
 }
 
 #post-close {
-    display: block;
-    position: absolute;
     border: 1px solid;
     border-radius: 10px;
-    padding: 10px;
-    top: 22%;
-    left: 1240px;
     font-size: 18px;
+    width: 5%;
+    margin: 10px;
 }
 
 .post-form-content .input-title {
