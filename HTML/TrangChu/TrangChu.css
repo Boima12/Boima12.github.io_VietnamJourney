@@ -668,7 +668,7 @@ div.explore div.menuitems div.newbox div.newbox_mid p.p2 {
     font-style: normal;
     font-weight: 700;
     line-height: 130%; /* 1.95rem */
-
+    margin-right: 1rem;
     margin-top: -0.5rem;
 }
 
