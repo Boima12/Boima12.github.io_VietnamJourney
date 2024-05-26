@@ -213,13 +213,24 @@ header #sidebar div.sidebar-content i {
 div.donate {
     width: 100%;
     height: 129.5625rem; 
-
-    background-image: url("../../Images/QuyenGop/animal1_qg.jpeg");
-    background-position: center;
-    background-size: 100% 75.25rem;
+    background-image: linear-gradient(to bottom, rgba(211, 203, 203, 0), rgba(0, 0, 0, 0.5)), url("pexels-shvetsa-5029853.jpg");
+    background-position: center center;
+    background-size: cover;
     background-attachment: fixed;
+    margin-top: 0;
 }
-
+.container {
+    display: flex;
+}.container_info {
+    margin-top: 10rem;
+    width: 51rem;
+    height: 37rem;
+    background-color: #edf0eb;
+    border-radius: 10px;
+    background-image:url("Frame14184.png") ;
+    background-position: center center;
+    background-size: cover;
+}
 
 div.donate div.donate_top {
     width: 100%;
@@ -228,11 +239,23 @@ div.donate div.donate_top {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 8rem;
 
-    padding-left: 38rem;
-    padding-bottom: 14rem;
+    padding-bottom: 9rem;
 
     /* border: 1px solid red; */
+}
+div.donate div.donate_top_info {
+    width: 100%;
+    height: 56.25rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 13rem;
+    padding-bottom: 14rem;
+
 }
 
 
@@ -282,7 +305,7 @@ div.donate div.donate_top div.deco1_para div.para p.p1 {
 
 
 div.donate div.donate_top div.deco1_para div.para p.p1 #txt1 {
-    color: #2B6200;
+    color: #edf0eb;
 }
 
 
@@ -302,7 +325,7 @@ div.donate div.donate_mid {
     width: 100%;
     height: 73.3125rem; 
 
-    padding-left: 49rem;
+    padding-left: 46rem;
 
     display: flex;
     justify-content: center;
