@@ -1074,14 +1074,14 @@ color: #000000;
 
 .section-six .item .title {
     color: #000000;
-    font-size: 22px;
+    font-size: 24px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 0;
 }
 
 .section-six .item .desc {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: var(--color-desc);
     text-align: center;
@@ -1101,10 +1101,10 @@ color: #000000;
         padding: 15px;
     }
     .section-six .item .title {
-        font-size: 16px;
+        font-size: 22px;
     }
     .section-six .item .desc {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 991.8px) {
