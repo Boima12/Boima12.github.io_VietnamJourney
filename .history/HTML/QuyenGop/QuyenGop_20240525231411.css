@@ -1,0 +1,818 @@
+/* IMPORTING */
+@font-face {
+    font-family: Raleway;
+    src: url("../../Fonts/Raleway-VariableFont_wght.ttf");
+}
+
+/* END IMPORTING */
+
+
+
+/* Loại bỏ margin - padding global */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* global font */
+* {
+    font-family: Raleway;
+}
+
+
+
+/* NAVIGATION BAR */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1.5px solid rgb(97, 94, 94);
+    background: linear-gradient(to right, rgb(29, 96, 42), rgb(39, 154, 83));
+    z-index: 999;
+}
+
+
+header div.logo img {
+    width: auto;
+    height: 2.9rem;
+    /* margin-left: 3rem; */
+}
+
+header div.logo img.logo1 {
+    display: block;
+    padding-left: 10px;
+    margin: 20px;
+}
+
+header div.logo img.logo2 {
+    display: none;
+}
+
+
+header div.links nav {
+    display: flex;
+    justify-content: space-around;
+    
+    width: 100%;
+}
+
+
+header div.links nav a {
+    margin: 0; 
+    padding: 0 1rem; 
+
+    cursor: pointer; 
+
+    text-decoration: none;
+    color: white; 
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+header div.links nav a:hover {
+    color: #b8e994;
+}
+
+
+header div.bar {
+    display: none;
+    margin-right: 1rem;
+
+    color: aliceblue;
+    text-align: right;
+}
+
+
+header #overlay {
+    display: none;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    
+    z-index: 9999;
+}
+
+
+header #sidebar {
+    display: flex;
+    justify-content: flex-end; 
+    float: right;
+
+    position: fixed;
+
+    top: 0;
+    right: -20%;
+    width: 20%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+
+    background: linear-gradient(to top, rgb(37, 79, 46), rgb(53, 189, 105));
+
+    transition: right 0.3s ease-in-out;
+    z-index: 10000;
+
+}
+
+
+header #sidebar.open {
+    right: 0;
+}
+
+
+header #sidebar div.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1.5rem; 
+    width: 100%;
+}
+
+
+header #sidebar div.sidebar-content a {
+    text-align: right; 
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    color: aliceblue;
+    margin-top: 1.5rem;
+
+    margin-right: 0; 
+}
+
+
+header #sidebar div.sidebar-content a:hover {
+    color: #b8e994;
+}
+
+
+header #sidebar div.sidebar-content i {
+    font-size: smaller;
+}
+
+/* END NAVIGATION BAR */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Code CSS ở đây */
+div.donate {
+    width: 100%;
+    height: 129.5625rem; 
+
+    background-image: url("../../Images/QuyenGop/animal1_qg.jpeg");
+    background-position: center;
+    background-size: 100% 75.25rem;
+    background-attachment: fixed;
+}
+
+
+div.donate div.donate_top {
+    width: 100%;
+    height: 56.25rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 38rem;
+    padding-bottom: 14rem;
+
+    /* border: 1px solid red; */
+}
+
+
+div.donate div.donate_top div.deco1_para {
+    width: auto;
+    height: 22.0625rem;
+
+    display: flex;
+    gap: 1rem;
+
+    /* border: 1px solid red; */
+}
+
+
+
+div.donate div.donate_top div.deco1_para div.deco1 {
+    width: 1.375rem;
+    height: 9.8125rem;
+    background: #2B6200;
+
+    align-self: flex-start;
+}
+
+
+div.donate div.donate_top div.deco1_para div.para {
+    width: 37.5625rem;
+    height: 22.0625rem; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    /* border: 1px solid red; */
+}
+
+
+div.donate div.donate_top div.deco1_para div.para p.p1 {
+    width: 32.6875rem;
+
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+div.donate div.donate_top div.deco1_para div.para p.p1 #txt1 {
+    color: #2B6200;
+}
+
+
+div.donate div.donate_top div.deco1_para div.para p.p2 {
+    width: 37.5625rem;
+
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+div.donate div.donate_mid {
+    width: 100%;
+    height: 73.3125rem; 
+
+    padding-left: 49rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}
+
+
+div.donate div.donate_mid div.donate_board {
+    width: 43.8125rem;
+    height: 54.6875rem; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #FFF;
+    border-radius: 2rem;
+}
+
+
+div.donate div.donate_mid div.donate_board p.p1 {
+    width: 38.3125rem; 
+
+    padding-top: 2.5rem;
+
+    color: #2B6200;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 2.925rem */
+}
+
+
+div.donate div.donate_mid div.donate_board p.p2 {
+    width: 39.375rem; 
+
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 1.95rem */
+}
+
+
+div.donate div.donate_mid div.donate_board div.deco1 {
+    width: 38.1875rem;
+    height: 0.1875rem;
+
+    background: #2B6200;
+}
+
+
+div.donate div.donate_mid div.donate_board div.hv_items {
+    width: 38.1875rem;
+    height: 21.75rem; 
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    /* border: 1px solid red; */
+}
+
+
+div.donate div.donate_mid div.donate_board div.hv_items div.item {
+    width: 17.5rem;
+    height: 10rem; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 0.625rem;
+    background: #199A0E;
+}
+
+
+div.donate div.donate_mid div.donate_board div.hv_items div.item img {
+    width: 7.5rem;
+    height: 5rem;
+
+    padding-top: 0.5rem;
+}
+
+
+div.donate div.donate_mid div.donate_board div.hv_items div.item p {
+    width: 17.5rem;
+
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 1.95rem */
+}
+
+
+div.donate div.donate_mid div.donate_board button {
+    width: 15rem;
+    height: 3.8rem; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2.5rem;
+    background: #199A0E;
+
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 2.275rem */
+}
+
+
+div.donate div.donate_mid div.donate_board p.p3 {
+    align-self: flex-end;
+
+    margin-right: 1rem;
+
+    color: rgba(0, 0, 0, 0.50);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 1.625rem */
+}
+
+
+div.donate_descrip {
+    width: 100%;
+    height: 40.1875rem; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background: #F1FBFF;
+}
+
+
+div.donate_descrip p.p1 {
+    color: #2B6200;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 3.25rem */
+}
+
+
+div.donate_descrip p.p2 {
+    width: 73.9375rem; 
+
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 1.6875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 2.19375rem */
+}
+
+
+div.donate_descrip div.infos {
+    width: 97.5%;
+    height: 20.1875rem; 
+
+    display: flex;
+    justify-content: space-around;
+}
+
+
+div.donate_descrip div.infos div.info_box {
+    width: 28.25rem;
+    height: 16.6875rem; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}
+
+
+div.donate_descrip div.infos div.info_box img {
+    width: 8.75rem;
+    height: 6.25rem; 
+}
+
+
+div.donate_descrip div.infos div.info_box p.box_p1 {
+    margin-top: 1rem;
+
+    color: #2B6200;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Raleway;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 2.19375rem */
+}
+
+
+div.donate_descrip div.infos div.info_box p.box_p2 {
+    width: 28.25rem;
+
+    color: #000;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    padding-top: 1.5rem;
+    background-color: white;
+}
+
+footer div.up {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.2rem;
+    width: 100%;
+
+}
+
+
+footer div.up h2 {
+    font-weight: bold;
+    color: #2B6200;
+}
+
+
+footer div.up #about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 50%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+footer div.up #quickLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 25%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+footer div.up #quickLinks a {
+    text-decoration: none;
+    color: black;
+}
+
+
+footer div.up #contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 25%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+footer div.mid {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+
+    width: 100%;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+footer div.mid a img {
+    width: 30px;
+    height: 30px;
+}
+
+
+footer div.bot {
+    display: flex;
+    justify-content: flex-start;
+
+    padding-left: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    width: 100%;
+
+    background: linear-gradient(to right, rgb(29, 96, 42), rgb(39, 154, 83));
+}
+
+
+footer div.bot img {
+    width: auto;
+    height: 2.9rem;
+}
+
+
+footer div.bot img.logo1 {
+    display: block;
+}
+
+
+footer div.bot img.logo2 {
+    display: none;
+}
+
+
+/* END FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1380px) {
+    header div.links nav a {
+        display: none;
+    }
+
+    header div.bar  {
+        display: block;
+    }
+
+    header #sidebar {
+        right: -30%;
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 950px) {
+    footer div.up {
+        flex-direction: column;
+    }
+
+    footer div.up #about {
+        width: 100%;
+    }
+
+    footer div.up #quickLinks {
+        width: 100%;
+    }
+
+    footer div.up #contacts {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 630px) {
+    header {
+        height: 3.5rem;
+    }
+
+    header div.logo img.logo1 {
+        display: none;
+    }
+
+    header div.logo img.logo2 {
+        display: block;
+    }
+
+    header div.logo img {
+        width: auto;
+        height: 3.5rem;
+        margin-left: 14rem;
+    }
+
+    header #sidebar {
+        right: -50%;
+        width: 50%;
+    }
+
+    footer div.bot {
+        justify-content: center;
+        padding-left: 0rem;
+    }
+
+    footer div.bot img {
+        height: 3.5rem;
+    }
+
+    footer div.bot img.logo1 {
+        display: none;
+    }
+
+    footer div.bot img.logo2 {
+        display: block;
+    }
+}
+
+
+@media (max-width: 560px) {
+    header div.logo img {
+        margin-left: 8rem;
+    }
+
+    header #sidebar {
+        right: -60%;
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 320px) {
+    header div.logo img {
+        margin-left: 5rem;
+    }
+}
+
+/* END RESPONSIVE DESIGN */
+
+
+
+/* animating stuff */
+.hidden {
+    opacity: 0;
+    filter: blur(5);
+    transform: translateY(35%);
+    transition: all 1s;
+}
+
+
+/* @media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+} */
+
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0%);
+}
+
+
+div.donate div.donate_top div.deco1_para div.para p.p1 {
+    transition-delay: 200ms;
+}
+
+
+div.donate div.donate_top div.deco1_para div.para p.p2 {
+    transition-delay: 400ms;
+}
+
+
+div.donate_descrip div.infos div:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+
+div.donate_descrip div.infos div:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+
+
+
+
+
+/* END animating stuff */

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<HTML lang="en">
+
+<HEAD>
+    <TITLE>Trang Chủ</TITLE>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="TrangChu.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../Images/yo.ico">
+
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</HEAD>
+
+
+
+<BODY id="body1">
+    
+    <!-- header là Navigation bar -->
+    <header id="header1">
+        <div class="logo">
+            <img class="logo1" src="../../Images/header1.png" onclick="navToIntro()" style="height: 40px;">
+            <img class="logo2" src="../../Images/header2.png" onclick="navToIntro()">
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../TrangChu/TrangChu.html">TRANG CHỦ</a>
+                <a href="../CongDong/CongDong.html">CỘNG ĐỒNG</a>
+                <a href="../ChienDich/ChienDich.html">CHIẾN DỊCH</a>
+                <a href="../QuyenGop/QuyenGop.html">QUYÊN GÓP</a>
+                <a href="../TaiKhoan/TaiKhoan.html">TÀI KHOẢN</a>
+            </nav>    
+        </div>
+
+        <div class="bar" onclick="MenuBar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div id="overlay"></div>
+
+        <div id="sidebar">
+            <div class="sidebar-content">
+        
+                <div style="color: aliceblue;text-align: right;margin-top:0;" onclick="CloseBar()"><i
+                        class="fa-solid fa-bars"></i></div>
+                        
+                <!-- <p>VỀ CHÚNG TÔI <i class="fa-regular fa-address-card"></i></p> -->
+                <a href="../TrangChu/TrangChu.html">TRANG CHỦ <i class="fa-solid fa-house"></i></a>
+                <a href="../CongDong/CongDong.html">CỘNG ĐỒNG <i class="fa-solid fa-earth-americas"></i></a>
+                <a href="../ChienDich/ChienDich.html">CHIẾN DỊCH <i class="fa-solid fa-fire"></i></a>
+                <a href="../Nhom/Nhom.html">NHÓM <i class="fa-solid fa-people-group"></i></a>
+                <a href="../QuyenGop/QuyenGop.html">QUYÊN GÓP <i class="fa-solid fa-hand-holding-dollar"></i></a>
+                <a href="../TaiKhoan/TaiKhoan.html">TÀI KHOẢN <i class="fa-solid fa-user"></i></a>
+            </div>
+
+        </div>
+
+    </header>
+    <div style="height: 3rem;"></div>   <!-- Cách một khoảng cho navigation bar -->
+
+
+
+<!-- LÀM Ở ĐÂY -->
+    
+    <div class="slider show1">
+        <div class="slider_info1 show1">
+            <p class="slider_p1"><span>Thiên nhiên</span> là tài sản quý giá</p>
+            <p class="slider_p2">Với sứ mệnh nâng cao nhận thức về những thách thức môi trường mà đất nước đang phải đối mặt, từ những khu rừng nhiệt đới tươi tốt đến những rạn san hô rực rỡ. Hãy tham gia cùng chúng tôi thông qua các ​​cộng đồng, cơ hội tình nguyện và giáo dục, từ đó cùng nhau tạo nên một tương lai bền vững cho môi trường Việt Nam.</p>
+        </div>
+
+        <div class="slider_info2 show1">
+            <p class="slider_p1"><span>Không gian xanh</span> là lá phổi của hành tinh.</p>
+            <p class="slider_p2">Không khí trong lành, nguồn nước sạch, và đất đai màu mỡ là những yếu tố cơ bản giúp con người sống khỏe mạnh và phát triển bền vững. Môi trường ô nhiễm có thể dẫn đến nhiều bệnh tật nghiêm trọng, từ các vấn đề về hô hấp đến ung thư.</p>
+        </div>
+
+        <div class="slider_info3 show1">
+            <p class="slider_p1">Mỗi loài động thực vật đều có một vai trò nhất định trong hệ sinh thái, từ việc cung cấp thức ăn đến duy trì chuỗi thức ăn. Sự suy giảm hoặc mất mát đa dạng sinh học do ô nhiễm và biến đổi khí hậu có thể gây ra những hậu quả nghiêm trọng, ảnh hưởng đến cả hệ sinh thái và cuộc sống con người.</p>
+            <p class="slider_p2"><span>Đa dạng sinh học</span> là tài sản vô giá.</p>
+        </div>
+    </div>
+
+
+    <div class="slider2">
+        <div class="slider_info2 hidden">
+            <p class="slider_p1"><span>Không gian xanh</span> là lá phổi của hành tinh.</p>
+            <p class="slider_p2">Không khí trong lành, nguồn nước sạch, và đất đai màu mỡ là những yếu tố cơ bản giúp con người sống khỏe mạnh và phát triển bền vững. Môi trường ô nhiễm có thể dẫn đến nhiều bệnh tật nghiêm trọng, từ các vấn đề về hô hấp đến ung thư.</p>
+        </div>
+    </div>
+
+
+
+
+    <div class="authors">
+        <div class="authors_p">
+            <p class="authors_p1 hidden">Nhà sáng lập</p>
+            <p class="authors_p2 hidden">Với mục tiêu làm việc vì môi trường, chúng tôi mong muốn nâng cao nhận thức về môi trường đến cho tất cả mọi người.</p>
+        </div>
+        
+        <div class="people">
+            <div class="person hidden">
+                <img src="../../Images/TrangChu/Bao.jpg">
+                <p class="title">Cao Hoàng Phước Bảo</p>
+                <p class="descrip">Đồng sáng lập</p>
+            </div>
+
+            <div class="person hidden">
+                <img src="../../Images/TrangChu/Dinh.png">
+                <p class="title">Dương Đính</p>
+                <p class="descrip">Đồng sáng lập</p>
+            </div>
+
+            <div class="person hidden">
+                <img src="../../Images/TrangChu/Tu.JPG">
+                <p class="title">Lê Hữu Anh Tú</p>
+                <p class="descrip">Đồng sáng lập</p>
+            </div>
+
+            <div class="person hidden">
+                <img src="../../Images/TrangChu/Viet.jpg">
+                <p class="title">Lê Trung Việt</p>
+                <p class="descrip">Đồng sáng lập</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="explore">
+        <div class="para">
+            <p class="p1 hidden">Khám phá</p>
+            <p class="p2 hidden">Nguồn thông tin đáng tin cậy về những hoạt động bảo vệ môi trường và các dự án bảo tồn thiên nhiên tại Việt Nam. Mỗi tuần, chúng tôi cập nhật những tin tức mới nhất về các sáng kiến xanh, sự kiện môi trường và những câu chuyện truyền cảm hứng từ cộng đồng bảo vệ thiên nhiên. Hãy theo dõi bản tin của chúng tôi để không bỏ lỡ bất kỳ cơ hội nào để chung tay bảo vệ vẻ đẹp tự nhiên của Việt Nam.</p>
+        </div>
+
+
+        <div class="menuitems">
+            <div class="newbox hidden">
+                <div class="newbox_top">
+                    <img src="../../Images/TrangChu/tiger1.jpg">
+                </div>
+
+                <div class="newbox_mid">
+                    <p class="p1">Tháng tư 12, 2024</p>
+                    <p class="p2">Vai trò của hổ vằn ?</p>
+                </div>
+
+                <div class="newbox_bot">
+                    <form>
+                        <a href="Post1.html"><button type="button">Đọc tiếp</button></a>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="newbox hidden">
+                <div class="newbox_top">
+                    <img src="../../Images/TrangChu/animal2.webp">
+                </div>
+
+                <div class="newbox_mid">
+                    <p class="p1">Tháng tư 12, 2024</p>
+                    <p class="p2">Hươu Sao La, loài động vật tưởng như bước ra từ truyện cổ tích?</p>
+                </div>
+
+                <div class="newbox_bot">
+                    <form>
+                        <button type="button">Đọc tiếp</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="newbox hidden">
+                <div class="newbox_top">
+                    <img src="../../Images/TrangChu/horsebear.jpg">
+                </div>
+
+                <div class="newbox_mid">
+                    <p class="p1">Tháng tư 12, 2024</p>
+                    <p class="p2">Khám Phá Đời Sống của những chú Gấu Ngựa</p>
+                </div>
+
+                <div class="newbox_bot">
+                    <form>
+                        <button type="button">Đọc tiếp</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="newbox hidden">
+                <div class="newbox_top">
+                    <img src="../../Images/TrangChu/tarsier.jpg">
+                </div>
+
+                <div class="newbox_mid">
+                    <p class="p1">Tháng tư 12, 2024</p>
+                    <p class="p2">Cảm Xúc Của Động Vật: Những Điều Chúng Ta Chưa Biết</p>
+                </div>
+
+                <div class="newbox_bot">
+                    <form>
+                        <button type="button">Đọc tiếp</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="newbox hidden">
+                <div class="newbox_top">
+                    <img src="../../Images/TrangChu/en1.webp">
+                </div>
+
+                <div class="newbox_mid">
+                    <p class="p1">Tháng tư 12, 2024</p>
+                    <p class="p2">Rừng Vàng Biển Bạc: Tài Nguyên Quý Giá Của Việt Nam</p>
+                </div>
+
+                <div class="newbox_bot">
+                    <form>
+                        <button type="button">Đọc tiếp</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="newbox hidden">
+                <div class="newbox_top">
+                    <img src="../../Images/TrangChu/en2.webp">
+                </div>
+
+                <div class="newbox_mid">
+                    <p class="p1">Tháng tư 12, 2024</p>
+                    <p class="p2">Bảo Vệ Khu Sinh Thái: Hành Động Vì Tương Lai</p>
+                </div>
+
+                <div class="newbox_bot">
+                    <form>
+                        <button type="button">Đọc tiếp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="morebt">
+            <form>
+                <button>Xem thêm</button>
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section footer-logo">
+                <img src="../../Images/header2.png" alt="Logo">
+                <p>Vì một môi trường xanh-sạch-đẹp <br>Hãy chung tay bảo vệ môi trường</p>
+            </div>
+            <div class="footer-section footer-links">
+                <h3>Liên kết</h3>
+                <ul>
+                    <li><a href="../../HTML/TrangChu/TrangChu.html">Trang Chủ</a></li>
+                    <li><a href="../../HTML/CongDong/CongDong.html">Cộng Đồng</a></li>
+                    <li><a href="../../HTML/ChienDich/ChienDich.html">Chiến Dịch</a></li>
+                    <li><a href="../../HTML/QuyenGop/QuyenGop.html">Quyên Góp</a></li>
+                    <li><a href="../../HTML/TaiKhoan/TaiKhoan.html">Tài Khoản</a></li>
+                </ul>
+            </div>
+            <div class="footer-section footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a>Google</li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a>Facebook</li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a>Github</li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a>Linkedin</li>
+                </ul>
+            </div>
+            <div class="footer-section footer-contact">
+                <h3>Liên hệ</h3>
+                <p>Email: viethan@vku.udn.vn</p>
+                <p>SĐT: 0979727604</p>
+                <p>Địa chỉ: Trần Đại Nghĩa, Ngũ Hành Sơn, Đà Nẵng</p>
+            </div>
+            <div class="footer-section footer-newsletter">
+                <h3>Theo dõi bản tin từ chúng tôi</h3>
+                <form action="#" method="post" class="newsletter-form">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <img src="../../Images/header1.png" alt="Logo">
+        </div>
+    </footer>
+
+    
+    <!-- JavaScript -->
+    <script src="../../Script/TrangChu.js"></script>
+    <noscript>Your Browser doesn't support JavaScript</noscript>
+    
+</BODY>
+
+</HTML>

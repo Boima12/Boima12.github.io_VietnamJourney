@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<HTML lang="en">
+
+<HEAD>
+    <TITLE>Sự kiện</TITLE>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="SuKien.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../Images/yo.ico">
+
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</HEAD>
+
+
+
+<BODY style="background-color: #FFF4E6;">
+    
+    <!-- header là Navigation bar -->
+    <header id="header1">
+        <div class="logo">
+            <img class="logo1" src="../../Images/header1.png" onclick="navToIntro()" style="height: 40px;">
+            <img class="logo2" src="../../Images/header2.png" onclick="navToIntro()">
+        </div>
+
+        <div class="links">
+            <nav>
+                <a href="../TrangChu/TrangChu.html">TRANG CHỦ</a>
+                <a href="../CongDong/CongDong.html">CỘNG ĐỒNG</a>
+                <a href="../ChienDich/ChienDich.html">CHIẾN DỊCH</a>
+                <a href="../Nhom/Nhom.html">NHÓM</a>
+                <a href="../QuyenGop/QuyenGop.html">QUYÊN GÓP</a>
+                <a href="../TaiKhoan/TaiKhoan.html">TÀI KHOẢN</a>
+            </nav>    
+        </div>
+
+        <div class="bar" onclick="MenuBar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div id="overlay"></div>
+
+        <div id="sidebar">
+            <div class="sidebar-content">
+        
+                <div style="color: aliceblue;text-align: right;margin-top:0;" onclick="CloseBar()"><i
+                        class="fa-solid fa-bars"></i></div>
+                        
+                <!-- <p>VỀ CHÚNG TÔI <i class="fa-regular fa-address-card"></i></p> -->
+                <a href="../TrangChu/TrangChu.html">TRANG CHỦ <i class="fa-solid fa-house"></i></a>
+                <a href="../CongDong/CongDong.html">CỘNG ĐỒNG <i class="fa-solid fa-earth-americas"></i></a>
+                <a href="../ChienDich/ChienDich.html">CHIẾN DỊCH <i class="fa-solid fa-fire"></i></a>
+                <a href="../Nhom/Nhom.html">NHÓM <i class="fa-solid fa-people-group"></i></a>
+                <a href="../QuyenGop/QuyenGop.html">QUYÊN GÓP <i class="fa-solid fa-hand-holding-dollar"></i></a>
+                <a href="../TaiKhoan/TaiKhoan.html">TÀI KHOẢN <i class="fa-solid fa-user"></i></a>
+            </div>
+
+        </div>
+
+    </header>
+    <div style="height: 3rem;"></div>   <!-- Cách một khoảng cho navigation bar -->
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+<!-- LÀM Ở ĐÂY -->
+    <div style="height: auto; margin-bottom: 10px;" class="body">
+        <nav>
+            <a href="../CongDong/CongDong.html" class="event">Trang chủ</a>
+            <hr>
+            <a href="">Sự kiện</a>
+        </nav>
+        <div class="post">
+            <p class="title">Sự kiện đã đăng ký tham gia</p>
+            <div class="event-1">
+                <img src="../../Images/event-image-1.png" class="image-event">
+                <p class="event-title">NGÀY HỘI TRỒNG CÂY XANH TẠI THÀNH PHỐ ĐÀ NẴNG</p>
+                <div class="event-infor">
+                    <div class="event-icon">
+                        <img src="../../Images/calendar.png" style="height: 40px; margin-bottom: 10px">
+                        <img src="../../Images/location.png" style="height: 40px; margin-bottom: 10px">
+                        <img src="../../Images/group.png" style="height: 40px; margin-bottom: 10px">
+                        <img src="../../Images/infor.png" style="height: 40px; margin-bottom: 10px">
+                    </div>
+                    <div class="event-content">
+                        <ul>
+                            <li>Thời gian: 13:00 - 17:30, 20/05/2024</li>
+                            <li>Địa điểm: Rừng đặc dụng huyện Hòa Vang</li>
+                            <li>Số lượng tham gia: 2000+</li>
+                            <li>Sự kiện tạo bởi: Nguyễn Thị Huyền</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="cancel-event"><img src="../../Images/cancel-event.png" style="height: 40px; margin: 0px 15px;">Hủy tham gia</button>
+        </div>
+        <div class="post-1">
+            <p class="title">Sự kiện sắp tới</p>
+            <div class="event-1">
+                <img src="../../Images/event-image-1.png" class="image-event">
+                <p class="event-title">NGÀY HỘI TRỒNG CÂY XANH TẠI THÀNH PHỐ ĐÀ NẴNG</p>
+                <div class="event-infor">
+                    <div class="event-icon">
+                        <img src="../../Images/calendar.png" style="height: 40px; margin-bottom: 10px">
+                        <img src="../../Images/location.png" style="height: 40px; margin-bottom: 10px">
+                        <img src="../../Images/group.png" style="height: 40px; margin-bottom: 10px">
+                        <img src="../../Images/infor.png" style="height: 40px; margin-bottom: 10px">
+                    </div>
+                    <div class="event-content">
+                        <ul>
+                            <li>Thời gian: 13:00 - 17:30, 20/05/2024</li>
+                            <li>Địa điểm: Rừng đặc dụng huyện Hòa Vang</li>
+                            <li>Số lượng tham gia: 2000+</li>
+                            <li>Sự kiện tạo bởi: Nguyễn Thị Huyền</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="register-event"><img src="../../Images/register-event.png" style="height: 40px; margin: 0px 15px;">Đăng ký tham gia</button>
+        </div>
+        <div class="publish">
+            <p class="title">Tạo sự kiện mới</p>
+            <button class="post-button"><img src="../../Images/publish.png" style="height: 30px; margin: 0px 15px">Tải lên sự kiện mới</button>
+        </div>
+        <div class="member">
+            <p class="title">Sự kiện nổi bật trong tháng</p>
+            <div class="member-infor">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                    <circle cx="25" cy="25" r="25" transform="matrix(-1 0 0 1 50 0)" fill="#9A1C1C"/>
+                </svg>
+                <div class="name-infor">
+                    <p class="avt-name" style="top: 95px;">1</p>
+                    <p style="margin: 0;" class="name">Trồng cây xanh Đà Nẵng</p>
+                    <p style="color: gray; font-size: 16px; font-family: Segoe UI; margin-bottom: 0; font-weight: bold">&nbsp; 2067 người đã đăng ký tham gia</p> 
+                </div>
+            </div>
+            <div class="member-infor">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                    <circle cx="25" cy="25" r="25" transform="matrix(-1 0 0 1 50 0)" fill="#100E80"/>
+                </svg>
+                <div class="name-infor">
+                    <p class="avt-name" style="top: 165px;">2</p>
+                    <p style="margin: 0;" class="name">Dọn rác bãi biển Mỹ Khê</p>
+                    <p style="color: gray; font-size: 16px; font-family: Segoe UI; margin-bottom: 0; font-weight: bold">&nbsp; 1583 người đã đăng ký tham gia</p> 
+                </div>
+            </div>
+            <div class="member-infor">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                    <circle cx="25" cy="25" r="25" transform="matrix(-1 0 0 1 50 0)" fill="#800E0E"/>
+                </svg>
+                <div class="name-infor">
+                    <p class="avt-name" style="top: 240px;">3</p>
+                    <p style="margin: 0;" class="name">Ngày hội chạy bộ vì môi trường</p>
+                    <p style="color: gray; font-size: 16px; font-family: Segoe UI; margin-bottom: 0; font-weight: bold">&nbsp; 1344 người đã đăng ký tham gia</p> 
+                </div>
+            </div>
+            <div class="member-infor">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                    <circle cx="25" cy="25" r="25" transform="matrix(-1 0 0 1 50 0)" fill="#80660E"/>
+                </svg>
+                <div class="name-infor">
+                    <p class="avt-name" style="top: 312px;">4</p>
+                    <p style="margin: 0;" class="name">WORKSHOP Bảo vệ môi trường</p>
+                    <p style="color: gray; font-size: 16px; font-family: Segoe UI; margin-bottom: 0; font-weight: bold">&nbsp; 1025 người đã đăng ký tham gia</p> 
+                </div>
+            </div>
+            <div class="member-infor">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                    <circle cx="25" cy="25" r="25" transform="matrix(-1 0 0 1 50 0)" fill="#700E80"/>
+                </svg>
+                <div class="name-infor">
+                    <p class="avt-name" style="top: 385px;">5</p>
+                    <p style="margin: 0;" class="name">Ngày hội xanh Ngũ Hành Sơn</p>
+                    <p style="color: gray; font-size: 16px; font-family: Segoe UI; margin-bottom: 0; font-weight: bold">&nbsp; 893 người đã đăng ký tham gia</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+    <footer>
+        <div class="up">
+            <div id="about">
+                <h2>Chúng tôi</h2>
+                <p>chúng tôi là những người yêu thiên nhiên và ủng hộ môi trường. Tận dụng sức mạnh của cộng đồng và giáo dục trong việc thúc đẩy sự thay đổi tích cực đến môi trường, từ đó tạo ra những câu chuyện truyền cảm hứng và lời khuyên thiết thực để giúp mọi người nhận ra ai cũng có thể hành động vì môi trường.<br>
+                    Hãy tham gia cùng chúng tôi trên hành trình hướng tới một thế giới xanh hơn, lành mạnh hơn cho tất cả mọi người.
+                </p>
+            </div>
+
+            <div id="quickLinks">
+                <h2>Links</h2>
+                <a href="../../HTML/TrangChu/TrangChu.html">Trang Chủ</a>
+                <a href="../../HTML/CongDong/CongDong.html">Cộng Đồng</a>
+                <a href="../../HTML/ChienDich/ChienDich.html">Chiến Dịch</a>
+                <a href="../../HTML/Nhom/Nhom.html">Nhóm</a>
+                <a href="../../HTML/QuyenGop/QuyenGop.html">Quyên Góp</a>
+                <a href="../../HTML/TaiKhoan/TaiKhoan.html">Tài Khoản</a>
+            </div>
+
+            <div id="contacts">
+                <h2>Liên Lạc</h2>
+                <p>baochp.23it@vku.udn.vn</p>
+                <p>+94897538627</p>
+            </div>
+        </div>
+
+
+        <div class="mid">
+            <a href="https://www.youtube.com/channel/UC1cpkfqLNp6I1HgNy2MUhUg"><img src="../../Images/youtube_icon.png"></a>
+            <a href="https://discord.com/invite/45fkbZcj"><img src="../../Images/discord_icon.png"></a>
+            <a href="https://x.com/dog_rates"><img src="../../Images/twitter_icon.png"></a>
+            <a href="https://web.facebook.com/vku.udn.vn/?_rdc=1&_rdr"><img src="../../Images/facebook_icon.png"></a>
+        </div>
+
+
+        <div class="bot">
+            <img class="logo1" src="../../Images/header1.png">
+            <img class="logo2" src="../../Images/header2.png">
+        </div>
+    </footer>
+
+    
+    <!-- JavaScript -->
+    <script src="../../Script/QuyenGop.js"></script>
+    <noscript>Your Browser doesn't support JavaScript</noscript>
+    
+</BODY>
+
+</HTML>

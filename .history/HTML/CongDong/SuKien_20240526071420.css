@@ -1,0 +1,655 @@
+/* IMPORTING */
+@font-face {
+    font-family: Raleway;
+    src: url("../../Fonts/Raleway-VariableFont_wght.ttf");
+}
+
+/* END IMPORTING */
+
+
+
+/* Loại bỏ margin - padding global */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* global font */
+* {
+    font-family: Raleway;
+}
+
+
+
+/* NAVIGATION BAR */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1.5px solid rgb(97, 94, 94);
+    background: linear-gradient(to right, rgb(29, 96, 42), rgb(39, 154, 83));
+    z-index: 999;
+}
+
+
+header div.logo img {
+    width: auto;
+    height: 2.9rem;
+    /* margin-left: 3rem; */
+}
+
+header div.logo img.logo1 {
+    display: block;
+    padding-left: 10px;
+    margin: 20px;
+}
+
+header div.logo img.logo2 {
+    display: none;
+}
+
+
+header div.links nav {
+    display: flex;
+    justify-content: space-around;
+    
+    width: 100%;
+}
+
+
+header div.links nav a {
+    margin: 0; 
+    padding: 0 1rem; 
+
+    cursor: pointer; 
+
+    text-decoration: none;
+    color: white; 
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+header div.links nav a:hover {
+    color: #b8e994;
+}
+
+
+header div.bar {
+    display: none;
+    margin-right: 1rem;
+
+    color: aliceblue;
+    text-align: right;
+}
+
+
+header #overlay {
+    display: none;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    
+    z-index: 9999;
+}
+
+
+header #sidebar {
+    display: flex;
+    justify-content: flex-end; 
+    float: right;
+
+    position: fixed;
+
+    top: 0;
+    right: -20%;
+    width: 20%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+
+    background: linear-gradient(to top, rgb(37, 79, 46), rgb(53, 189, 105));
+
+    transition: right 0.3s ease-in-out;
+    z-index: 10000;
+
+}
+
+
+header #sidebar.open {
+    right: 0;
+}
+
+
+header #sidebar div.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1.5rem; 
+    width: 100%;
+}
+
+
+header #sidebar div.sidebar-content a {
+    text-align: right; 
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    color: aliceblue;
+    margin-top: 1.5rem;
+
+    margin-right: 0; 
+}
+
+
+header #sidebar div.sidebar-content a:hover {
+    color: #b8e994;
+}
+
+
+header #sidebar div.sidebar-content i {
+    font-size: smaller;
+}
+
+/* END NAVIGATION BAR */
+
+
+/* BEGIN BODY STYLE */
+
+.body {
+    background-color: white;
+    position: relative;
+    top: 10px;
+    padding: 40px 50px 50px 50px;
+    font-family: Raleway;
+}
+
+.body nav hr {
+    position: absolute;
+    top: 70px;
+    left: 175px;
+    width: 85px;
+    margin: 0;
+    border: 1px solid black;
+}
+
+.body nav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px;
+    color: black;
+}
+
+.body nav .event {
+    color: gray;
+}
+
+.body .post {
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 67%;
+    height: auto;
+    background-color: rgba(239, 239, 239, 0.40);
+    display: flex;
+    flex-direction: column;
+}
+
+.body .post .title {
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+.body .post .event-1 {
+    padding-left: 30px;
+}
+
+.body .post .event-1 .image-event {
+    height: 300px;
+    width: 96%;
+}
+
+.body .post .event-1 .event-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.body .post .event-1 .event-infor {
+    display: flex;
+}
+
+.body .post .event-1 .event-infor .event-icon {
+    width: 5%;
+}
+
+.body .post .event-1 .event-infor .event-content ul {
+    padding: 0;
+}
+
+.body .post .event-1 .event-infor .event-content ul li {
+    list-style: none;
+    min-height: 50px;
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.body .post .cancel-event {
+    width: 30%;
+    height: 60px;
+    margin-left: 70%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #8E2222;
+}
+
+.body .post-1 {
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 67%;
+    height: auto;
+    background-color: rgba(239, 239, 239, 0.40);
+    display: flex;
+    flex-direction: column;
+}
+
+.body .post-1 .title {
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+.body .post-1 .event-1 {
+    padding-left: 30px;
+}
+
+.body .post-1 .event-1 .image-event {
+    height: 300px;
+    width: 96%;
+}
+
+.body .post-1 .event-1 .event-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.body .post-1 .event-1 .event-infor {
+    display: flex;
+}
+
+.body .post-1 .event-1 .event-infor .event-icon {
+    width: 5%;
+}
+
+.body .post-1 .event-1 .event-infor .event-content ul {
+    padding: 0;
+}
+
+.body .post-1 .event-1 .event-infor .event-content ul li {
+    list-style: none;
+    min-height: 50px;
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.body .post-1 .register-event {
+    width: 30%;
+    height: 60px;
+    margin-left: 70%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #3E8E22;
+}
+
+.body .publish {
+    margin-top: 15px;
+    left: 1040px;
+    height: 180px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(239, 239, 239, 0.40);
+    width: 28%;
+    top: 70px;
+    padding: 30px;
+}
+
+.publish .title {
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.publish .post-button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: #3E8E22;
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.body .member {
+    left: 1040px;
+    height: 450px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(239, 239, 239, 0.40);
+    width: 28%;
+    top: 300px;
+}
+
+.body .member {
+    padding: 30px;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.member .title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.member .member-infor {
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.member .member-infor  .name {
+    font-size: 19px;
+    font-weight: bold;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.avt-name {
+    font-family: Segoe UI;
+    color: white;
+    position: absolute;
+    top: 838px;
+    font-weight: bold;
+    left: 48px;
+    font-size: 20px;
+}
+
+
+/* END BODY STYLE */
+
+/* FOOTER */
+/* FOOTER */
+
+footer {
+    background-color: #2e8b57;
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 20px;
+}
+
+.footer-logo img {
+    width: 400px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.footer-logo p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.footer-links h3, .footer-social h3, .footer-contact h3, .footer-newsletter h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-links ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social ul {
+    text-align: left;
+    padding-left: 25%;
+}
+
+.footer-links ul li, .footer-social ul li {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-links ul li a, .footer-social ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-social ul li {
+    display: inline-block;
+}
+
+.footer-social ul li a {
+    background-color: white;
+    display: inline-block;
+    width: 32px;
+    height: 33px;
+    border-radius: 8px;
+    color: #05390C;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+
+
+
+.footer-links ul li a:hover, .footer-social ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.footer-contact p {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.footer-newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 300px;
+}
+
+.footer-newsletter button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e6d46;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.footer-newsletter button:hover {
+    background-color: #145236;
+}
+
+.footer-bottom {
+    background-color: #1e6d46;
+    padding: 20px;
+}
+
+.footer-bottom img {
+    width: 400px;
+    object-fit: contain;
+}
+
+
+/* END FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1380px) {
+    header div.links nav a {
+        display: none;
+    }
+
+    header div.bar  {
+        display: block;
+    }
+
+    header #sidebar {
+        right: -30%;
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 950px) {
+    footer div.up {
+        flex-direction: column;
+    }
+
+    footer div.up #about {
+        width: 100%;
+    }
+
+    footer div.up #quickLinks {
+        width: 100%;
+    }
+
+    footer div.up #contacts {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 630px) {
+    header {
+        height: 3.5rem;
+    }
+
+    header div.logo img.logo1 {
+        display: none;
+    }
+
+    header div.logo img.logo2 {
+        display: block;
+    }
+
+    header div.logo img {
+        width: auto;
+        height: 3.5rem;
+        margin-left: 14rem;
+    }
+
+    header #sidebar {
+        right: -50%;
+        width: 50%;
+    }
+
+    footer div.bot {
+        justify-content: center;
+        padding-left: 0rem;
+    }
+
+    footer div.bot img {
+        height: 3.5rem;
+    }
+
+    footer div.bot img.logo1 {
+        display: none;
+    }
+
+    footer div.bot img.logo2 {
+        display: block;
+    }
+}
+
+
+@media (max-width: 560px) {
+    header div.logo img {
+        margin-left: 8rem;
+    }
+
+    header #sidebar {
+        right: -60%;
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 320px) {
+    header div.logo img {
+        margin-left: 5rem;
+    }
+}
+
+/* END RESPONSIVE DESIGN */

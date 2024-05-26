@@ -213,13 +213,24 @@ header #sidebar div.sidebar-content i {
 div.donate {
     width: 100%;
     height: 129.5625rem; 
-
-    background-image: url("../../Images/QuyenGop/animal1_qg.jpeg");
-    background-position: center;
-    background-size: 100% 75.25rem;
+    background-image: linear-gradient(to bottom, rgba(211, 203, 203, 0), rgba(0, 0, 0, 0.5)), url("pexels-shvetsa-5029853.jpg");
+    background-position: center center;
+    background-size: cover;
     background-attachment: fixed;
+    margin-top: 0;
 }
-
+.container {
+    display: flex;
+}.container_info {
+    margin-top: 10rem;
+    width: 51rem;
+    height: 37rem;
+    background-color: #edf0eb;
+    border-radius: 10px;
+    background-image:url("information.png") ;
+    background-position: center center;
+    background-size: cover;
+}
 
 div.donate div.donate_top {
     width: 100%;
@@ -228,11 +239,23 @@ div.donate div.donate_top {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 8rem;
 
-    padding-left: 38rem;
-    padding-bottom: 14rem;
+    padding-bottom: 9rem;
 
     /* border: 1px solid red; */
+}
+div.donate div.donate_top_info {
+    width: 100%;
+    height: 56.25rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 13rem;
+    padding-bottom: 14rem;
+
 }
 
 
@@ -282,7 +305,7 @@ div.donate div.donate_top div.deco1_para div.para p.p1 {
 
 
 div.donate div.donate_top div.deco1_para div.para p.p1 #txt1 {
-    color: #2B6200;
+    color: #edf0eb;
 }
 
 
@@ -302,7 +325,7 @@ div.donate div.donate_mid {
     width: 100%;
     height: 73.3125rem; 
 
-    padding-left: 49rem;
+    padding-left: 46rem;
 
     display: flex;
     justify-content: center;
@@ -549,107 +572,135 @@ div.donate_descrip div.infos div.info_box p.box_p2 {
 
 /* FOOTER */
 footer {
-    padding-top: 1.5rem;
-    background-color: white;
+    background-color: #2e8b57;
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+    padding-bottom: 0;
 }
 
-footer div.up {
+.footer-container {
     display: flex;
-    justify-content: space-around;
-    gap: 1.2rem;
-    width: 100%;
-
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-
-footer div.up h2 {
-    font-weight: bold;
-    color: #2B6200;
+.footer-section {
+    flex: 1 1 200px;
+    margin: 20px;
 }
 
-
-footer div.up #about {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    width: 50%;
-    padding-left: 3rem;
-    padding-right: 3rem;
+.footer-logo img {
+    width: 400px;
+    height: 100px;
+    object-fit: contain;
 }
 
-
-footer div.up #quickLinks {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    width: 25%;
-    padding-left: 3rem;
-    padding-right: 3rem;
+.footer-logo p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
 }
 
+.footer-links h3, .footer-social h3, .footer-contact h3, .footer-newsletter h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
 
-footer div.up #quickLinks a {
+.footer-links ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social ul {
+    text-align: left;
+    padding-left: 25%;
+}
+
+.footer-links ul li, .footer-social ul li {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-links ul li a, .footer-social ul li a {
+    color: #ffffff;
     text-decoration: none;
-    color: black;
+    font-size: 18px;
+}
+
+.footer-social ul li {
+    display: inline-block;
+}
+
+.footer-social ul li a {
+    background-color: white;
+    display: inline-block;
+    width: 32px;
+    height: 33px;
+    border-radius: 8px;
+    color: #05390C;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    margin-right: 5px;
 }
 
 
-footer div.up #contacts {
+
+
+.footer-links ul li a:hover, .footer-social ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.footer-contact p {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.footer-newsletter form {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-
-    width: 25%;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    align-items: center;
 }
 
-
-footer div.mid {
-    display: flex;
-    justify-content: flex-end;
-    gap: 0.5rem;
-
-    width: 100%;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
+.footer-newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 300px;
 }
 
-
-footer div.mid a img {
-    width: 30px;
-    height: 30px;
+.footer-newsletter button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e6d46;
+    color: #ffffff;
+    cursor: pointer;
 }
 
-
-footer div.bot {
-    display: flex;
-    justify-content: flex-start;
-
-    padding-left: 3rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    width: 100%;
-
-    background: linear-gradient(to right, rgb(29, 96, 42), rgb(39, 154, 83));
+.footer-newsletter button:hover {
+    background-color: #145236;
 }
 
-
-footer div.bot img {
-    width: auto;
-    height: 2.9rem;
+.footer-bottom {
+    background-color: #1e6d46;
+    padding: 20px;
 }
 
-
-footer div.bot img.logo1 {
-    display: block;
-}
-
-
-footer div.bot img.logo2 {
-    display: none;
+.footer-bottom img {
+    width: 400px;
+    object-fit: contain;
 }
 
 
