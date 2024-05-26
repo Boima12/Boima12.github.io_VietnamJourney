@@ -209,12 +209,31 @@ header #sidebar div.sidebar-content i {
 
 
 /* Code CSS ở đây */
+div.mainscreen {
+    margin-top: -10px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 div.mainscreen a {
+    position: absolute;
+
+    width: 10rem;
+    /* background-color: rgba(88, 88, 88, 0.492); */
+
     color: green;
     text-decoration: none;
+    /* font-weight: bold; */
 
-    margin-right: 3rem;
-    text-align: end;
+    margin-right: 2rem;
+    margin-top: 27rem;
+    align-self: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
