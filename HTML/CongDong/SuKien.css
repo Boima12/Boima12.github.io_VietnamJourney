@@ -167,6 +167,8 @@ header #sidebar div.sidebar-content i {
 /* BEGIN BODY STYLE */
 
 .body {
+    display: flex;
+    flex-direction: row;
     background-color: white;
     position: relative;
     top: 10px;
@@ -174,16 +176,23 @@ header #sidebar div.sidebar-content i {
     font-family: Raleway;
 }
 
-.body nav hr {
+.body-nav {
     position: absolute;
-    top: 70px;
-    left: 175px;
-    width: 85px;
+    z-index: 2;
+    top: 80px;
+    left: 40px;
+}
+
+.body-nav hr {
+    position: absolute;
+    top: 30px;
+    left: 118px;
+    width: 100px;
     margin: 0;
     border: 1px solid black;
 }
 
-.body nav a {
+.body-nav a {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -191,15 +200,30 @@ header #sidebar div.sidebar-content i {
     color: black;
 }
 
-.body nav .event {
+nav .event {
     color: gray;
+}
+
+.body .left-side {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    height: fit-content;
+    width: 67%;
+}
+
+.body .right-side {
+    padding: 30px 0px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 40%;
 }
 
 .body .post {
     padding: 30px;
     border-radius: 10px;
-    margin-top: 15px;
-    width: 67%;
+    width: 100%;
     height: auto;
     background-color: rgba(239, 239, 239, 0.40);
     display: flex;
@@ -237,6 +261,10 @@ header #sidebar div.sidebar-content i {
     width: 5%;
 }
 
+.body .post .event-1 .event-infor .event-content {
+    margin-left: 20px;
+}
+
 .body .post .event-1 .event-infor .event-content ul {
     padding: 0;
 }
@@ -250,9 +278,10 @@ header #sidebar div.sidebar-content i {
 }
 
 .body .post .cancel-event {
-    width: 30%;
-    height: 60px;
-    margin-left: 70%;
+    width: 35%;
+    height: auto;
+    padding: 10px 0px;
+    margin-left: 65%;
     border: none;
     border-radius: 10px;
     color: white;
@@ -265,7 +294,7 @@ header #sidebar div.sidebar-content i {
     padding: 30px;
     border-radius: 10px;
     margin-top: 30px;
-    width: 67%;
+    width: 100%;
     height: auto;
     background-color: rgba(239, 239, 239, 0.40);
     display: flex;
@@ -303,6 +332,10 @@ header #sidebar div.sidebar-content i {
     width: 5%;
 }
 
+.body .post-1 .event-1 .event-infor .event-content {
+    margin-left: 20px;
+}
+
 .body .post-1 .event-1 .event-infor .event-content ul {
     padding: 0;
 }
@@ -316,9 +349,10 @@ header #sidebar div.sidebar-content i {
 }
 
 .body .post-1 .register-event {
-    width: 30%;
-    height: 60px;
-    margin-left: 70%;
+    width: 35%;
+    height: auto;
+    padding: 10px 10px;
+    margin-left: 65%;
     border: none;
     border-radius: 10px;
     color: white;
@@ -328,14 +362,10 @@ header #sidebar div.sidebar-content i {
 }
 
 .body .publish {
-    margin-top: 15px;
-    left: 1040px;
     height: 180px;
-    position: absolute;
     border-radius: 10px;
     background-color: rgba(239, 239, 239, 0.40);
-    width: 28%;
-    top: 70px;
+    width: 100%;
     padding: 30px;
 }
 
@@ -346,29 +376,28 @@ header #sidebar div.sidebar-content i {
 }
 
 .publish .post-button {
+    padding: 10px 0px;
     width: 100%;
-    height: 50px;
+    height: auto;
     border: none;
     border-radius: 10px;
     background: #3E8E22;
     color: white;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 500;
 }
 
 .body .member {
-    left: 1040px;
     height: 450px;
-    position: absolute;
     border-radius: 10px;
     background-color: rgba(239, 239, 239, 0.40);
-    width: 28%;
-    top: 300px;
+    width: 100%;
 }
 
 .body .member {
+    margin-top: 30px;
     padding: 30px;
-    width: 28%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -390,16 +419,6 @@ header #sidebar div.sidebar-content i {
     font-weight: bold;
     padding-left: 10px;
     width: 100%;
-}
-
-.avt-name {
-    font-family: Segoe UI;
-    color: white;
-    position: absolute;
-    top: 838px;
-    font-weight: bold;
-    left: 48px;
-    font-size: 20px;
 }
 
 

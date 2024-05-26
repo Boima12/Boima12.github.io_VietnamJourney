@@ -173,6 +173,8 @@ header #sidebar div.sidebar-content i {
 /* BEGIN BODY STYLE */
 
 .body {
+    display: flex;
+    flex-direction: row;
     background-color: white;
     position: relative;
     top: 10px;
@@ -180,16 +182,23 @@ header #sidebar div.sidebar-content i {
     font-family: Raleway;
 }
 
-.body nav hr {
+.body-nav {
     position: absolute;
-    top: 70px;
-    left: 60px;
+    z-index: 2;
+    top: 80px;
+    left: 40px;
+}
+
+.body-nav hr {
+    position: absolute;
+    top: 30px;
+    left: 10px;
     width: 100px;
     margin: 0;
     border: 1px solid black;
 }
 
-.body nav a {
+.body-nav a {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -197,54 +206,50 @@ header #sidebar div.sidebar-content i {
     color: black;
 }
 
-.body nav .event {
+nav .event {
     color: gray;
 }
 
-
-
 .body .post {
+    padding-bottom: 30px;
     border-radius: 10px;
-    margin-top: 15px;
+    margin-top: 30px;
     width: 67%;
-    height: 1100px;
+    height: fit-content;
     background-color: rgba(239, 239, 239, 0.40);
     display: flex;
 }
 
-.body .publish {
-    margin-top: 15px;
-    left: 1040px;
+.body .right-side {
+    padding: 30px 0px 30px 40px;
+    width: 40%;
+}
+
+.body .right-side .publish {
     height: 180px;
-    position: absolute;
     border-radius: 10px;
     background-color: rgba(239, 239, 239, 0.40);
-    width: 28%;
-    top: 70px;
+    width: 100%;
 }
 
-.body .member {
-    left: 1040px;
+.body .right-side .member {
+    margin-top: 30px;
     height: 450px;
-    position: absolute;
     border-radius: 10px;
     background-color: rgba(239, 239, 239, 0.40);
-    width: 28%;
-    top: 300px;
+    width: 100%;
 }
 
-.body .online {
-    left: 1040px;
+.body .right-side .online {
+    margin-top: 30px;
     height: 380px;
-    position: absolute;
     border-radius: 10px;
     background-color: rgba(239, 239, 239, 0.40);
-    width: 28%;
-    top: 790px;
+    width: 100%;
 }
 
 .body .post .avatar {
-    margin: 40px 35px;
+    margin: 40px 30%;
 }
 
 .body .post .name {
@@ -252,15 +257,6 @@ header #sidebar div.sidebar-content i {
     font-weight: bold;
     display: flex;
     margin-top: 40px;
-}
-
-.body .post .avatar-name {
-    position: absolute;
-    top: 137px;
-    left: 109px;
-    color: white;
-    font-size: 28px;
-    font-weight: bold;
 }
 
 .body .post .title {
@@ -274,12 +270,12 @@ header #sidebar div.sidebar-content i {
     text-align: justify;
     font-size: 20px;
     font-weight: 500;
-    padding-right: 130px;
+    padding-right: 50px;
 }
 
 .body .post .photo-1 {
     border-radius: 10px;
-    width: 83%;
+    width: 93%;
     height: 470px;
 }
 
@@ -336,6 +332,8 @@ header #sidebar div.sidebar-content i {
 }
 
 .comment-box {
+    display: flex;
+    flex-direction: row-reverse;
     width: 100%;
     height: 100%;
     background: white;
@@ -352,23 +350,6 @@ header #sidebar div.sidebar-content i {
     margin-top: 10px;
 }
 
-.avatar-comment .avt-name {
-    left: 68px;
-}
-
-.post-comment .avt-name {
-    left: 68px;
-}
-
-.avt-name {
-    color: white;
-    position: absolute;
-    top: 838px;
-    font-weight: bold;
-    left: 48px;
-    font-size: 20px;
-}
-
 .publish {
     padding: 30px;
 }
@@ -381,12 +362,13 @@ header #sidebar div.sidebar-content i {
 
 .publish .post-button {
     width: 100%;
-    height: 50px;
+    padding: 10px 10px;
+    height: auto;
     border: none;
     border-radius: 10px;
     background: #3E8E22;
     color: white;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 500;
 }
 
