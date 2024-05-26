@@ -1202,14 +1202,154 @@ color: #000000;
 /* Code CSS ở đây */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FOOTER */
+/* footer div.up {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.2rem;
+    width: 100%;
+
+    background-color: white;
+
+}
+
+
+footer div.up h2 {
+    font-weight: bold;
+    color: #2B6200;
+}
+
+
+footer div.up #about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 50%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+footer div.up #quickLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 25%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+footer div.up #quickLinks a {
+    text-decoration: none;
+    color: black;
+}
+
+
+footer div.up #contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 25%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+footer div.mid {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+
+    width: 100%;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+}
+
+
+footer div.mid a img {
+    width: 30px;
+    height: 30px;
+}
+
+
+footer div.bot {
+    display: flex;
+    justify-content: flex-start;
+
+    padding-left: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    width: 100%;
+
+    background: linear-gradient(to right, rgb(29, 96, 42), rgb(39, 154, 83));
+}
+
+
+footer div.bot img {
+    width: auto;
+    height: 2.9rem;
+}
+
+
+footer div.bot img.logo1 {
+    display: block;
+}
+
+
+footer div.bot img.logo2 {
+    display: none;
+} */
+
+
+/* END FOOTER */
+
 
 footer {
     background-color: #2e8b57;
     color: #ffffff;
     padding: 30px 0;
     text-align: center;
-    padding-bottom: 0;
 }
 
 .footer-container {
@@ -1265,10 +1405,6 @@ footer {
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
-}
-
-.footer-social ul li {
-    display: inline-block;
 }
 
 .footer-social ul li a {
