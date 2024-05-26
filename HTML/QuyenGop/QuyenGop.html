@@ -77,11 +77,11 @@
 
 
 
-
-
     
 <!-- LÀM Ở ĐÂY -->
     <div class="donate">
+        <div class="container">
+            <div class="container_info"></div>
 
         <div class="donate_top">
 
@@ -96,6 +96,7 @@
                     <p class="p2 hidden">Một dự án ​​mang tính sứ mệnh nhằm bảo vệ động vật hoang dã đa dạng của Việt Nam. Dự án này nhằm mục đích nâng cao nhận thức về các loài động vật hoang dã và có nguy cơ tuyệt chủng đang sinh sống trên mảnh đất Việt Nam đồng thời tăng cường các nỗ lực bảo tồn.</p>
                 </div>
             </div>
+        </div>
 
         </div>
 
@@ -224,7 +225,24 @@
     <!-- JavaScript -->
     <script src="../../Script/QuyenGop.js"></script>
     <noscript>Your Browser doesn't support JavaScript</noscript>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+                
+                // else {
+                //     entry.target.classList.remove('show');
+                // }
+            });
+        });
+        
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
     
 </BODY>
 
 </HTML>
+
